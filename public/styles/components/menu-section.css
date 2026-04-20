@@ -6,6 +6,7 @@
      flex-direction: row;
      flex-wrap: wrap;
      max-height: calc(100vh - 7.5rem);
+     max-height: calc(100dvh - 7.5rem);
      overflow: auto;
      scrollbar-width: none;
  }
