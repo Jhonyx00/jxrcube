@@ -99,7 +99,7 @@ const actionButtonOptions = {
  * @type {ButtonGroupData}
  */
 const appearanceButtonOptions = {
-    name: "appearance",
+    name: "appearances",
     singleSelection: true,
     hover: false,
     classList: ["column-container"],
@@ -127,12 +127,12 @@ const puzzleButtonData = {
                     puzzleManager.setCurrent(key);
 
                     menu.selectButton(key, "puzzles");
-                    menu.selectButtonFromSubMenu(key, "appearance");
+                    menu.selectButtonFromSubMenu(key, "appearances");
 
-                    menu.replaceButtons("appearance", key);
+                    menu.replaceButtons("appearances", key);
                     menu.replaceButtons("cubelets", key);
 
-                    menu.selectFromButtons(key, "appearance", puzzleManager.currentAppearance);
+                    menu.selectFromButtons(key, "appearances", puzzleManager.currentAppearance);
                     menu.selectFromButtons(key, "cubelets", puzzleManager.getSubMenuState("cubeletOption"));
 
                     menu.resetSubMenuSelection("actions");
@@ -204,7 +204,7 @@ const menu = new Menu({
 Object.entries(puzzlesDynamicState).forEach(([key, data]) => {
     menu.buildSubButtons({
         key: key,
-        subMenuKey: "appearance",
+        subMenuKey: "appearances",
         list: data.ref.appearanceNames,
         // icons: appearanceIcons[key],
         callback: (key) => puzzleManager.changeAppearance(key)
@@ -235,11 +235,11 @@ const puzzleController = new PuzzleController(
         menu.renderGlobalButtons("puzzles");
         menu.renderGlobalButtons("actions");
         menu.renderSelectedButtons(puzzleManager.currentKey, "cubelets");
-        menu.renderSelectedButtons(puzzleManager.currentKey, "appearance");
+        menu.renderSelectedButtons(puzzleManager.currentKey, "appearances");
         // initial visual selection.
         menu.selectButton(puzzleManager.currentKey, "puzzles");
         menu.selectFromButtons(puzzleManager.currentKey, "cubelets", "all");
-        menu.selectFromButtons(puzzleManager.currentKey, "appearance", puzzleManager.currentAppearance);
+        menu.selectFromButtons(puzzleManager.currentKey, "appearances", puzzleManager.currentAppearance);
         // menu animation.
         menu.fadeIn({ delay: 700, duration: 300 });
         // document title.
