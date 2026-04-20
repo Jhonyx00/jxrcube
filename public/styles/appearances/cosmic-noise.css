@@ -1,0 +1,28 @@
+[data-name="mirror3x3x3"][data-appearance="cosmic noise"] .face-0.extroverted {
+    background-image: url("../../images/appearances/shape-mod/cosmic-noise.svg");
+}
+
+[data-name="mirror3x3x3"][data-appearance="cosmic noise"] .face-1.extroverted {
+    background-image: url("../../images/appearances/shape-mod/cosmic-noise.svg");
+}
+
+[data-name="mirror3x3x3"][data-appearance="cosmic noise"] .face-2.extroverted {
+    background-image: url("../../images/appearances/shape-mod/cosmic-noise.svg");
+}
+
+[data-name="mirror3x3x3"][data-appearance="cosmic noise"] .face-3.extroverted {
+    background-image: url("../../images/appearances/shape-mod/cosmic-noise.svg");
+}
+
+[data-name="mirror3x3x3"][data-appearance="cosmic noise"] .face-4.extroverted {
+    background-image: url("../../images/appearances/shape-mod/cosmic-noise.svg");
+}
+
+[data-name="mirror3x3x3"][data-appearance="cosmic noise"] .face-5.extroverted {
+    background-image: url("../../images/appearances/shape-mod/cosmic-noise.svg");
+}
+
+/* labels */
+[data-name="mirror3x3x3"][data-appearance="cosmic noise"] .face.extroverted {
+    color: #00ff1e;
+}

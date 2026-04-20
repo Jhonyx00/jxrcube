@@ -1,0 +1,42 @@
+[data-appearance="classic"] .face-0.extroverted {
+    background-image: url("../../images/appearances/color-based/classic/color-0.svg");
+}
+
+[data-appearance="classic"] .face-1.extroverted {
+    background-image: url("../../images/appearances/color-based/classic/color-1.svg");
+}
+
+[data-appearance="classic"] .face-2.extroverted {
+    background-image: url("../../images/appearances/color-based/classic/color-2.svg");
+}
+
+[data-appearance="classic"] .face-3.extroverted {
+    background-image: url("../../images/appearances/color-based/classic/color-3.svg");
+}
+
+[data-appearance="classic"] .face-4.extroverted {
+    background-image: url("../../images/appearances/color-based/classic/color-4.svg");
+}
+
+[data-appearance="classic"] .face-5.extroverted {
+    background-image: url("../../images/appearances/color-based/classic/color-5.svg");
+}
+
+[data-name="mirror3x3x3"][data-appearance="classic"] .face.extroverted {
+    background-image: url("../../images/appearances/shape-mod/classic.svg");
+    border: 3.5px solid black;
+}
+
+/* labels */
+[data-appearance="classic"] .face {
+    color: #ffffff;
+}
+
+[data-appearance="classic"] .face-1.extroverted,
+[data-appearance="classic"] .face-5.extroverted {
+    color: #000000;
+}
+
+[data-name="mirror3x3x3"][data-appearance="classic"] .face {
+    color: gray;
+}

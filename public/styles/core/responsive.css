@@ -1,0 +1,99 @@
+/* responsive width */
+@media (min-width: 0px) {
+    .dialog .content-container {
+        width: 100%;
+    }
+
+    .menu-section {
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 500px) {
+    .dialog .content-container {
+        width: 80%;
+    }
+}
+
+@media (min-width: 743px) {
+    .dialog .content-container {
+        width: 60%;
+    }
+
+    .menu-section {
+        gap: 2rem;
+    }
+}
+
+/* responsive height */
+@media (min-height: 0px) {
+    .scene {
+        transform: scale(0.2);
+    }
+}
+
+@media (min-height: 100px) {
+    .scene {
+        transform: scale(0.3);
+    }
+}
+
+@media (min-height: 150px) {
+    .scene {
+        transform: scale(0.4);
+    }
+}
+
+@media (min-height: 200px) {
+    .scene {
+        transform: scale(0.5);
+    }
+}
+
+@media (min-height: 250px) {
+    .scene {
+        transform: scale(0.6);
+    }
+}
+
+@media (min-height: 300px) {
+    .scene {
+        transform: scale(0.7);
+    }
+}
+
+@media (min-height: 350px) {
+    .scene {
+        transform: scale(0.8);
+    }
+}
+
+@media (min-height: 400px) {
+    .scene {
+        transform: scale(0.9);
+    }
+}
+
+@media (min-height: 500px) {
+    .scene {
+        transform: scale(1);
+    }
+}
+
+@media (min-height: 800px) {
+    .scene {
+        transform: scale(1.2);
+    }
+}
+
+@media (min-height: 1000px) {
+    .scene {
+        transform: scale(1.5);
+    }
+}
+
+@media (min-height: 1200px) {
+    .scene {
+        transform: scale(2);
+    }
+}

@@ -1,0 +1,48 @@
+[data-appearance="inverted"] .face-0.extroverted {
+    background-image: url("../../images/appearances/color-based/inverted/color-0.svg");
+}
+
+[data-appearance="inverted"] .face-1.extroverted {
+    background-image: url("../../images/appearances/color-based/inverted/color-1.svg");
+}
+
+[data-appearance="inverted"] .face-2.extroverted {
+    background-image: url("../../images/appearances/color-based/inverted/color-2.svg");
+}
+
+[data-appearance="inverted"] .face-3.extroverted {
+    background-image: url("../../images/appearances/color-based/inverted/color-3.svg");
+}
+
+[data-appearance="inverted"] .face-4.extroverted {
+    background-image: url("../../images/appearances/color-based/inverted/color-4.svg");
+}
+
+[data-appearance="inverted"] .face-5.extroverted {
+    background-image: url("../../images/appearances/color-based/inverted/color-5.svg");
+}
+
+/* labels */
+[data-appearance="inverted"] .face-0 {
+    color: #2155e4ff;
+}
+
+[data-appearance="inverted"] .face-1 {
+    color: #ffffff;
+}
+
+[data-appearance="inverted"] .face-2 {
+    color: #ff6d13ff;
+}
+
+[data-appearance="inverted"] .face-3 {
+    color: #00a811ff;
+}
+
+[data-appearance="inverted"] .face-4 {
+    color: #FF0000;
+}
+
+[data-appearance="inverted"] .face-5 {
+    color: #ffce0aff;
+}

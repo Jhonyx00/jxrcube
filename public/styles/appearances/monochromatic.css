@@ -1,0 +1,48 @@
+[data-appearance="monochromatic"] .face-0.extroverted {
+    background-image: url("../../images/appearances/color-based/monochromatic/color-0.svg");
+}
+
+[data-appearance="monochromatic"] .face-1.extroverted {
+    background-image: url("../../images/appearances/color-based/monochromatic/color-1.svg");
+}
+
+[data-appearance="monochromatic"] .face-2.extroverted {
+    background-image: url("../../images/appearances/color-based/monochromatic/color-2.svg");
+}
+
+[data-appearance="monochromatic"] .face-3.extroverted {
+    background-image: url("../../images/appearances/color-based/monochromatic/color-3.svg");
+}
+
+[data-appearance="monochromatic"] .face-4.extroverted {
+    background-image: url("../../images/appearances/color-based/monochromatic/color-4.svg");
+}
+
+[data-appearance="monochromatic"] .face-5.extroverted {
+    background-image: url("../../images/appearances/color-based/monochromatic/color-5.svg");
+}
+
+/* labels */
+[data-appearance="monochromatic"] .face-0 {
+    color: #1d1829;
+}
+
+[data-appearance="monochromatic"] .face-1 {
+    color: #7661a5;
+}
+
+[data-appearance="monochromatic"] .face-2 {
+    color: #4a3d67;
+}
+
+[data-appearance="monochromatic"] .face-3 {
+    color: #ded7f0;
+}
+
+[data-appearance="monochromatic"] .face-4 {
+    color: #9e87d3;
+}
+
+[data-appearance="monochromatic"] .face-5 {
+    color: #beafe2;
+}

@@ -1,0 +1,12 @@
+[data-name="mirror3x3x3"][data-appearance="neon blue"] .extroverted {
+    background-image: url("../../images/appearances/shape-mod/neon-blue.svg");
+}
+
+/* labels */
+[data-name="mirror3x3x3"][data-appearance="neon blue"] .face.extroverted {
+    color: #00aeffff;
+}
+
+[data-name="mirror3x3x3"][data-appearance="neon blue"] [data-box-id="13"] .face {
+    color: hsl(220, 100%, 50%);
+}

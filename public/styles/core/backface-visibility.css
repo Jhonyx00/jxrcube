@@ -1,0 +1,4 @@
+[data-appearance="hollow"] .face,
+[data-appearance="transparent"] .face {
+    backface-visibility: visible;
+}

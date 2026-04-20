@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <text   
+        x="50" 
+        y="50"
+        transform="rotate(-45, 50, 50), translate(0, -48)"
+        font-family="arial"
+        text-decoration="underline"
+        font-size="10"
+        dominant-baseline="middle"
+        text-anchor="middle"
+        fill="white"
+        font-weight="bold"
+    >
+    CW '
+    </text>
+    <text
+        x="50" 
+        y="50"
+        transform="rotate(-45, 50, 50), translate(0, 48)"
+        font-family="arial"
+        font-size="10"
+        text-decoration="underline"
+        dominant-baseline="middle"
+        text-anchor="middle"
+        fill="white"
+        font-weight="bold"
+    >
+    CW
+    </text>
+    <g transform="rotate(-180, 50, 50)">
+        <ellipse 
+            cx="50"
+            cy="50"
+            rx="40"
+            ry="40"
+            fill="none"
+            stroke="#fff"
+            stroke-width="3"
+            stroke-dasharray="63 63 63 63"
+            stroke-linejoin="round"
+            stroke-linecap="round"
+        />
+        
+        <polyline 
+            points="47,5 54,10 47,15"
+            fill="none"
+            stroke-width="3"
+            stroke="#ffffffff"      
+            stroke-linejoin="round"
+            stroke-linecap="round"
+        />
+        <polyline 
+            points="85,54 90,47 95,54"
+            fill="none"
+            stroke-width="3"
+            stroke="#ffffffff"      
+            stroke-linejoin="round"
+            stroke-linecap="round"
+        />
+    </g>
+</svg>

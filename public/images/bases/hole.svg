@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <defs>
+        <mask id="hole">
+            <rect
+                x="0"
+                y="0"
+                width="100"
+                height="100"
+                fill="white"
+            />
+            <rect
+                x="10"
+                y="10"
+                width="80"
+                height="80"
+                fill="black"
+                rx="12"
+            />
+        </mask>
+    </defs>
+    <rect 
+        x="0" 
+        y="0" 
+        width="100" 
+        height="100" 
+        mask="url(#hole)"
+        stroke="#a4a4a4ce"
+    />
+    <rect
+        x="10"
+        y="10"
+        width="80"
+        height="80"
+        stroke="#a4a4a4ce"
+        fill="transparent"
+        rx="12"
+    />
+</svg>

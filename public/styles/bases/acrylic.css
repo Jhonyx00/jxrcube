@@ -1,0 +1,4 @@
+[data-name="mirror3x3x3"][data-appearance="acrylic"] .face:not(.extroverted) {
+    background-image: none;
+    background-color: rgba(233, 179, 255, 0.5);
+}

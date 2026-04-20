@@ -1,0 +1,32 @@
+[data-appearance="grid"] .face-0.extroverted {
+    background-image: url("../../images/appearances/color-based/grid/color-0.svg");
+}
+
+[data-appearance="grid"] .face-1.extroverted {
+    background-image: url("../../images/appearances/color-based/grid/color-1.svg");
+}
+
+[data-appearance="grid"] .face-2.extroverted {
+    background-image: url("../../images/appearances/color-based/grid/color-2.svg");
+}
+
+[data-appearance="grid"] .face-3.extroverted {
+    background-image: url("../../images/appearances/color-based/grid/color-3.svg");
+}
+
+[data-appearance="grid"] .face-4.extroverted {
+    background-image: url("../../images/appearances/color-based/grid/color-4.svg");
+}
+
+[data-appearance="grid"] .face-5.extroverted {
+    background-image: url("../../images/appearances/color-based/grid/color-5.svg");
+}
+
+[data-name="mirror3x3x3"][data-appearance="grid"] .extroverted {
+    background-image: url("../../images/appearances/shape-mod/grid.svg");
+}
+
+/* labels */
+[data-name][data-appearance="grid"] .face {
+    color: rgba(255, 255, 255, 0.8);
+}

@@ -1,0 +1,19 @@
+ .menu {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+     pointer-events: none;
+     width: 100%;
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     padding: 1rem;
+ }
+
+ .menu .open-menu-icon {
+     background-image: url('../../icons/main/open.svg');
+ }
+
+ .menu .close-menu-icon {
+     background-image: url('../../icons/main/close.svg');
+ }

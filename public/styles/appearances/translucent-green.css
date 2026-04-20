@@ -1,0 +1,12 @@
+[data-name="mirror3x3x3"][data-appearance="translucent green"] .face.extroverted {
+    background-image: url("../../images/appearances/shape-mod/translucent-green.svg");
+}
+
+/* labels */
+[data-name="mirror3x3x3"][data-appearance="translucent green"] .face.extroverted {
+    color: hsla(162, 100%, 15%, 0.8);
+}
+
+[data-name="mirror3x3x3"][data-appearance="translucent green"] [data-box-id="13"] .face {
+    color: rgb(240, 250, 240);
+}

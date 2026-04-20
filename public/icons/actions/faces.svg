@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" >
+    <text   
+        x="48.5" 
+        y="50.5"
+        font-family="monospace"
+        font-size="25"
+        dominant-baseline="middle"
+        text-anchor="middle"
+        fill="white"
+        font-weight="bold"
+    >
+    Faces
+    </text>
+</svg>
+

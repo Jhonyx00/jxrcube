@@ -1,0 +1,41 @@
+[data-appearance="transparent"] .face-0.extroverted {
+    background-image: url("../../images/appearances/color-based/transparent/color-0.svg");
+}
+
+[data-appearance="transparent"] .face-1.extroverted {
+    background-image: url("../../images/appearances/color-based/transparent/color-1.svg");
+}
+
+[data-appearance="transparent"] .face-2.extroverted {
+    background-image: url("../../images/appearances/color-based/transparent/color-2.svg");
+}
+
+[data-appearance="transparent"] .face-3.extroverted {
+    background-image: url("../../images/appearances/color-based/transparent/color-3.svg");
+}
+
+[data-appearance="transparent"] .face-4.extroverted {
+    background-image: url("../../images/appearances/color-based/transparent/color-4.svg");
+}
+
+[data-appearance="transparent"] .face-5.extroverted {
+    background-image: url("../../images/appearances/color-based/transparent/color-5.svg");
+}
+
+/* labels */
+[data-appearance="transparent"] .face.extroverted {
+    color: #ffffff;
+}
+
+[data-appearance="transparent"] .face-1.extroverted,
+[data-appearance="transparent"] .face-5.extroverted {
+    color: #000000;
+}
+
+[data-appearance="transparent"] .face:not(.extroverted) {
+    color: transparent;
+}
+
+[data-appearance="transparent"] .core .face {
+    color: #ffffff;
+}

@@ -1,0 +1,52 @@
+.dialog {
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(4em);
+}
+
+.dialog button {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    background-image: url("../../icons/main/close.svg");
+}
+
+.dialog .content-container {
+    overflow: auto;
+    margin: 4.25em auto;
+    max-height: calc(100vh - 4.25em);
+    max-height: calc(100dvh - 4.25em);
+    background-color: #00000066;
+}
+
+.dialog .content-container .content {
+    padding: 1rem;
+    display: grid;
+    gap: 1em;
+    font-weight: bold;
+}
+
+.dialog .content-container .content .title {
+    font-size: 1.2em;
+    color: #ffffff50;
+}
+
+.dialog .content-container p {
+    color: #ffffff40;
+    font-size: 1em;
+}
+
+.dialog .content-container .content:not(:last-child) {
+    border-bottom: 0.1em solid #ffffff15;
+}
+
+.dialog .content-container .content a {
+    text-decoration: none;
+    color: #2155e440;
+}
+
+.dialog .content-container .content a:hover {
+    color: #2155e4;
+}

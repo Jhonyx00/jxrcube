@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>JxRCube</title>
+
+    <meta name="author" content="Jhonatan Reyes">
+    <meta name="keywords" content="jxrcube Jhonatan Reyes Puzzle Rubik's cube">
+    <meta name="description" content="An interactive simulator for 3D cubic puzzles.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="JxRCube - 3D Puzzle Simulator">
+    <meta property="og:description" content="Can you solve a twisty puzzle?">
+    <meta property="og:url" content="https://jhonyx00.github.io/jxrcube/">
+
+    <!-- icons -->
+    <link rel="icon" href="./public/icons/main/favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="./public/icons/main/favicon.png">
+
+    <!-- core -->
+    <link rel="stylesheet" href="public/styles/core/backface-visibility.css">
+    <link rel="stylesheet" href="public/styles/core/element-3d.css">
+    <link rel="stylesheet" href="public/styles/core/global.css">
+    <link rel="stylesheet" href="public/styles/core/responsive.css">
+    <link rel="stylesheet" href="public/styles/core/scene.css">
+
+    <!-- components -->
+    <link rel="stylesheet" href="public/styles/components/buttons.css">
+    <link rel="stylesheet" href="public/styles/components/dialog.css">
+    <link rel="stylesheet" href="public/styles/components/menu-section.css">
+    <link rel="stylesheet" href="public/styles/components/menu.css">
+
+    <!-- appearances -->
+    <link rel="stylesheet" href="public/styles/appearances/acrylic.css">
+    <link rel="stylesheet" href="public/styles/appearances/candy.css">
+    <link rel="stylesheet" href="public/styles/appearances/classic.css">
+    <link rel="stylesheet" href="public/styles/appearances/colored.css">
+    <link rel="stylesheet" href="public/styles/appearances/cosmic-noise.css">
+    <link rel="stylesheet" href="public/styles/appearances/eight-color.css">
+    <link rel="stylesheet" href="public/styles/appearances/glass.css">
+    <link rel="stylesheet" href="public/styles/appearances/grid.css">
+    <link rel="stylesheet" href="public/styles/appearances/hollow.css">
+    <link rel="stylesheet" href="public/styles/appearances/ice.css">
+    <link rel="stylesheet" href="public/styles/appearances/inverted.css">
+    <link rel="stylesheet" href="public/styles/appearances/monochromatic.css">
+    <link rel="stylesheet" href="public/styles/appearances/neon-blue.css">
+    <link rel="stylesheet" href="public/styles/appearances/outline.css">
+    <link rel="stylesheet" href="public/styles/appearances/pastel.css">
+    <link rel="stylesheet" href="public/styles/appearances/picture.css">
+    <link rel="stylesheet" href="public/styles/appearances/translucent-green.css">
+    <link rel="stylesheet" href="public/styles/appearances/transparent.css">
+    <link rel="stylesheet" href="public/styles/appearances/white.css">
+
+    <!-- bases -->
+    <link rel="stylesheet" href="public/styles/bases/acrylic.css">
+    <link rel="stylesheet" href="public/styles/bases/black.css">
+    <link rel="stylesheet" href="public/styles/bases/cream.css">
+    <link rel="stylesheet" href="public/styles/bases/gray.css">
+    <link rel="stylesheet" href="public/styles/bases/grid.css">
+    <link rel="stylesheet" href="public/styles/bases/hole.css">
+    <link rel="stylesheet" href="public/styles/bases/neon-blue.css">
+    <link rel="stylesheet" href="public/styles/bases/translucent-green.css">
+
+    <!-- puzzle -->
+    <link rel="stylesheet" href="public/styles/puzzle/cubelet-display-type.css">
+    <link rel="stylesheet" href="public/styles/puzzle/label-size.css">
+    <link rel="stylesheet" href="public/styles/puzzle/logo.css">
+    <link rel="stylesheet" href="public/styles/puzzle/picture-tile-coords.css">
+    <link rel="stylesheet" href="public/styles/puzzle/piece-sizes.css">
+    <link rel="stylesheet" href="public/styles/puzzle/visible-cubelet-label-colors.css">
+
+    <!-- type defs -->
+    <script src="src/types/typedefs.js"></script>
+
+    <!-- data ui -->
+    <script src="src/data/ui/icons.js"></script>
+    <script src="src/data/ui/dialog.js"></script>
+
+    <!-- puzzle data -->
+    <script src="src/data/puzzle/base.js"></script>
+    <script src="src/data/puzzle/config.js"></script>
+    <script src="src/data/puzzle/moves.js"></script>
+    <script src="src/data/puzzle/n2.movesMap.js"></script>
+    <script src="src/data/puzzle/n2.slices.js"></script>
+    <script src="src/data/puzzle/n3.movesMap.js"></script>
+    <script src="src/data/puzzle/n3.slices.js"></script>
+    <script src="src/data/puzzle/n4.movesMap.js"></script>
+    <script src="src/data/puzzle/n4.slices.js"></script>
+    <script src="src/data/puzzle/n5.movesMap.js"></script>
+    <script src="src/data/puzzle/n5.slices.js"></script>
+    <script src="src/data/puzzle/specialCallbacks.js"></script>
+
+    <!-- engine -->
+    <script src="src/core/engine/PuzzleFactory.js"></script>
+    <script src="src/core/engine/PuzzleBuilder.js"></script>
+    <script src="src/core/engine/Vector3D.js"></script>
+    <script src="src/core/engine/Puzzle.js"></script>
+    <script src="src/core/engine/Matrix3D.js"></script>
+    <script src="src/core/engine/Box3D.js"></script>
+    <script src="src/core/engine/BoxFace.js"></script>
+    <script src="src/core/engine/Container3D.js"></script>
+    <script src="src/core/engine/SignFace.js"></script>
+    <script src="src/core/engine/Sign3D.js"></script>
+    <script src="src/core/engine/Scene.js"></script>
+    <script src="src/core/engine/PuzzleController.js"></script>
+    <script src="src/core/engine/PuzzleState.js"></script>
+    <script src="src/core/engine/PuzzleManager.js"></script>
+
+    <!-- ui components -->
+    <script src="src/core/ui/Menu.js"></script>
+    <script src="src/core/ui/Button.js"></script>
+    <script src="src/core/ui/Dialog.js"></script>
+    <script src="src/core/ui/ButtonGroup.js"></script>
+
+    <!-- puzzle classes -->
+    <script src="src/puzzles/cube2x2x2.js"></script>
+    <script src="src/puzzles/cube3x3x3.js"></script>
+    <script src="src/puzzles/cube3x3x5.js"></script>
+    <script src="src/puzzles/cube3x3x4.js"></script>
+    <script src="src/puzzles/cube4x4x4.js"></script>
+    <script src="src/puzzles/mirror3x3x3.js"></script>
+
+    <script src="main.js" defer></script>
+</head>
+
+<body class="body"></body>
+
+</html>

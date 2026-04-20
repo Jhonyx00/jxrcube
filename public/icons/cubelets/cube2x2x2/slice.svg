@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" >
+        <!-- first row -->
+        <rect
+            x="0" 
+            y="0" 
+            width="14" 
+            height="14" 
+            fill="#ffffffff"
+            rx="2"
+        />
+        <rect
+            x="16" 
+            y="0" 
+            width="14" 
+            height="14" 
+            fill="#ffffffff" 
+            rx="2"
+        />
+        <!-- second row -->
+        <rect
+            x="0"
+            y="16" 
+            width="14" 
+            height="14" 
+            fill="#ffffff60"
+            rx="2"
+        />
+        <rect
+            x="16" 
+            y="16" 
+            width="14" 
+            height="14" 
+            fill="#ffffff60"
+            rx="2"
+        />
+</svg>

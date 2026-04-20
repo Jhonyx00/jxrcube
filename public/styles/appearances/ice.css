@@ -1,0 +1,36 @@
+[data-appearance="ice"] .face-0 {
+    background-image: url("../../images/appearances/color-based/ice/color-0.svg");
+}
+
+[data-appearance="ice"] .face-1 {
+    background-image: url("../../images/appearances/color-based/ice/color-1.svg");
+}
+
+[data-appearance="ice"] .face-2 {
+    background-image: url("../../images/appearances/color-based/ice/color-2.svg");
+}
+
+[data-appearance="ice"] .face-3 {
+    background-image: url("../../images/appearances/color-based/ice/color-3.svg");
+}
+
+[data-appearance="ice"] .face-4 {
+    background-image: url("../../images/appearances/color-based/ice/color-4.svg");
+}
+
+[data-appearance="ice"] .face-5 {
+    background-image: url("../../images/appearances/color-based/ice/color-5.svg");
+}
+
+/* labels */
+[data-appearance="ice"] .face-1,
+[data-appearance="ice"] .face-2,
+[data-appearance="ice"] .face-0 {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+[data-appearance="ice"] .face-3,
+[data-appearance="ice"] .face-4,
+[data-appearance="ice"] .face-5 {
+    color: rgba(255, 255, 255, 0.8);
+}

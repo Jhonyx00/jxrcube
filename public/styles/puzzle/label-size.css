@@ -1,0 +1,20 @@
+[data-name="cube2x2x2"] .face {
+    font-size: 1.5rem;
+}
+
+[data-name="cube3x3x3"] .face {
+    font-size: 1.2rem;
+}
+
+[data-name="mirror3x3x3"] .face {
+    font-size: 1.1rem;
+}
+
+[data-name="cube4x4x4"] .face {
+    font-size: 0.9rem;
+}
+
+[data-name="cube3x3x4"] .face,
+[data-name="cube3x3x5"] .face {
+    font-size: 0.94rem;
+}

@@ -1,0 +1,40 @@
+/* 
+ * these are very large css selectors, just for the logo of each cube. 
+ */
+[data-name="cube3x3x3"][data-labels="none"]:not([data-appearance="picture"]) [data-box-id="4"] .face-1.extroverted::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../icons/main/logo.svg");
+}
+
+[data-name="mirror3x3x3"][data-labels="none"] [data-box-id="4"] .face-1.extroverted::after,
+[data-name="cube3x3x4"][data-labels="none"] [data-box-id="4"] .face-1.extroverted::after,
+[data-name="cube3x3x5"][data-labels="none"] [data-box-id="4"] .face-1.extroverted::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../icons/main/logo.svg");
+}
+
+[data-name="cube2x2x2"][data-labels="none"]:not([data-appearance="picture"]) [data-box-id="0"] .face-1.extroverted::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../icons/main/logo.svg");
+}
+
+[data-name="cube4x4x4"][data-labels="none"] [data-box-id="5"] .face-1.extroverted::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../icons/main/logo.svg");
+}

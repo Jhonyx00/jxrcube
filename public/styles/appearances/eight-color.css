@@ -1,0 +1,94 @@
+[data-name="cube4x4x4"][data-appearance="8-color"] .face {
+    color: #ffffff9e;
+}
+
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="0"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="1"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="4"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="5"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="16"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="17"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="20"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="21"] .face {
+    background-image: url("../../images/appearances/color-based/eight-color/color-0.svg");
+    color: #0000009e;
+}
+
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="2"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="3"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="6"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="7"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="18"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="19"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="22"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="23"] .face {
+    background-image: url("../../images/appearances/color-based/eight-color/color-1.svg");
+}
+
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="8"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="9"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="12"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="13"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="24"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="25"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="28"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="29"] .face {
+    background-image: url("../../images/appearances/color-based/eight-color/color-2.svg");
+}
+
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="10"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="11"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="14"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="15"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="30"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="31"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="26"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="27"] .face {
+    background-image: url("../../images/appearances/color-based/eight-color/color-3.svg")
+}
+
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="32"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="33"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="48"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="49"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="52"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="53"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="36"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="37"] .face {
+    background-image: url("../../images/appearances/color-based/eight-color/color-4.svg");
+}
+
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="34"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="35"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="50"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="51"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="55"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="39"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="54"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="38"] .face {
+    background-image: url("../../images/appearances/color-based/eight-color/color-5.svg");
+}
+
+
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="40"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="41"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="44"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="45"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="60"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="61"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="56"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="57"] .face {
+    background-image: url("../../images/appearances/color-based/eight-color/color-6.svg");
+}
+
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="46"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="47"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="62"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="63"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="43"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="59"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="42"] .face,
+[data-name="cube4x4x4"][data-appearance="8-color"] [data-box-id="58"] .face {
+    background-image: url("../../images/appearances/color-based/eight-color/color-7.svg");
+    color: #0000009e;
+}

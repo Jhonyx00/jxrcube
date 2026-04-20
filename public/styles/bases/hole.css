@@ -1,0 +1,3 @@
+[data-appearance="hollow"] .face:not(.extroverted) {
+    background-image: url("../../images/bases/hole.svg");
+}

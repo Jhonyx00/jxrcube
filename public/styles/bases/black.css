@@ -1,0 +1,11 @@
+[data-appearance="classic"] .face,
+[data-appearance="candy"] .face,
+[data-appearance="picture"] .face,
+[data-appearance="outline"] .face,
+[data-appearance="inverted"] .face,
+[data-appearance="monochromatic"] .face,
+[data-appearance="chromatic"] .face,
+[data-appearance="cosmic noise"] .face,
+[data-appearance="colored"] .face {
+    background-color: #000000;
+}

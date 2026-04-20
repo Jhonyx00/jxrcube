@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" >
+    <ellipse 
+        cx="50" 
+        cy="50" 
+        rx="34" 
+        ry="20"  
+        fill="transparent"
+        stroke="white"
+        stroke-width="6"
+        stroke-dasharray="125,35"
+        stroke-linecap="round"
+        transform="rotate(180,50,50) scale(-1,1) translate(-100,0) "
+    />
+    <polyline 
+        points="37,60 46,70 37,80" 
+        stroke-width="6" 
+        stroke="#ffffffff"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    />
+    <line
+        x1="50" y1="16"
+        x2="50" y2="45"
+        stroke="white"
+        stroke-width="6"
+        stroke-linecap="round"
+    />
+</svg>
+

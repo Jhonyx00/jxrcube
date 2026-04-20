@@ -1,0 +1,64 @@
+[data-name="cube2x2x2"][data-appearance="picture"] [data-box-id] .face.extroverted,
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id] .face.extroverted {
+    image-rendering: pixelated;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] .face-0.extroverted {
+    background-image: url("../../images/appearances/color-based/picture/image-0.jpeg");
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] .face-1.extroverted {
+    background-image: url("../../images/appearances/color-based/picture/image-1.png");
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] .face-2.extroverted {
+    background-image: url("../../images/appearances/color-based/picture/image-2.jpeg");
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] .face-3.extroverted {
+    background-image: url("../../images/appearances/color-based/picture/image-3.png");
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] .face-4.extroverted {
+    background-image: url("../../images/appearances/color-based/picture/image-4.png");
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] .face-5.extroverted {
+    background-image: url("../../images/appearances/color-based/picture/image-5.png");
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] .face-0.extroverted {
+    background-image: url("../../images/appearances/color-based/picture/image-0.jpeg");
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] .face-1.extroverted {
+    background-image: url("../../images/appearances/color-based/picture/image-1.png");
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] .face-2.extroverted {
+    background-image: url("../../images/appearances/color-based/picture/image-2.jpeg");
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] .face-3.extroverted {
+    background-image: url("../../images/appearances/color-based/picture/image-3.png");
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] .face-4.extroverted {
+    background-image: url("../../images/appearances/color-based/picture/image-4.png");
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] .face-5.extroverted {
+    background-image: url("../../images/appearances/color-based/picture/image-5.png");
+}
+
+/* labels */
+[data-name="cube3x3x3"][data-appearance="picture"] .face.extroverted,
+[data-name="cube2x2x2"][data-appearance="picture"] .face.extroverted {
+    color: #ffffff;
+    text-shadow: 0px 0px 0.2em black;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] :not(.face.extroverted),
+[data-name="cube2x2x2"][data-appearance="picture"] :not(.face.extroverted) {
+    color: #ffffff;
+}

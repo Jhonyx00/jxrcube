@@ -1,0 +1,12 @@
+[data-name="mirror3x3x3"][data-appearance="white"] .extroverted {
+    background-image: url("../../images/appearances/shape-mod/white.svg");
+}
+
+/* labels */
+[data-name="mirror3x3x3"][data-appearance="white"] .face.extroverted {
+    color: hsl(220, 100%, 50%);
+}
+
+[data-name="mirror3x3x3"][data-appearance="white"] [data-box-id="13"] .face {
+    color: hsl(220, 100%, 50%);
+}

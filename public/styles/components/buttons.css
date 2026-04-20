@@ -1,0 +1,96 @@
+.btn-group {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Button styles */
+.btn {
+    border: none;
+    cursor: pointer;
+    pointer-events: auto;
+    background-color: transparent;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.opaque-btns .btn,
+.opaque-btn {
+    transition: transform ease 200ms;
+    filter: brightness(30%);
+}
+
+.btn:active {
+    transform: scale(0.94);
+}
+
+.opaque-btns .btn:hover,
+.opaque-btn:hover {
+    filter: brightness(100%);
+    mix-blend-mode: difference;
+}
+
+.text-btn {
+    height: 2.25rem;
+    padding: 0 0.45rem;
+    width: max-content;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.icon-btn {
+    width: 2.25rem;
+    height: 2.25rem;
+}
+
+.bg-btns button,
+.bg-btn {
+    background-color: #ffffff30;
+}
+
+.active.text-btn {
+    filter: brightness(100%);
+    background-color: white;
+    color: black;
+    backdrop-filter: blur(1em);
+    mix-blend-mode: difference;
+}
+
+.active.icon-btn {
+    filter: brightness(100%);
+    backdrop-filter: blur(1em);
+    mix-blend-mode: difference;
+}
+
+.scale-0 .btn {
+    transform: scale(0);
+}
+
+.rounded-btns button,
+.rounded-btn {
+    border-radius: 0.5rem;
+}
+
+.open-dialog-btn {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    background-image: url('../../icons/main/info.svg');
+}
+
+.option-title {
+    font-size: 1rem;
+    font-weight: bold;
+    mix-blend-mode: difference;
+    color: rgba(255, 255, 255, 0.3);
+    width: max-content;
+}
+
+span.active {
+    color: #ffffff;
+}

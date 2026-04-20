@@ -1,0 +1,3 @@
+[data-appearance="grid"] .face:not(.extroverted) {
+    background-image: url("../../images/bases/grid.svg");
+}

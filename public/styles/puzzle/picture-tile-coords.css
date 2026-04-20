@@ -1,0 +1,352 @@
+[data-name="cube3x3x3"][data-appearance="picture"] .face.extroverted {
+    background-size: 300% 300%;
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] .face.extroverted {
+    background-size: 200% 200%;
+}
+
+/* 0 */
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="0"] .face.face-1.extroverted {
+    background-position: 0% 0%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="0"] .face.face-3.extroverted {
+    background-position: 100% 0%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="0"] .face.face-4.extroverted {
+    background-position: 0% 0%;
+}
+
+/* 1 */
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="1"] .face.face-1.extroverted {
+    background-position: 50% 0%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="1"] .face.face-3.extroverted {
+    background-position: 50% 0%;
+}
+
+/* 2 */
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="2"] .face.face-1.extroverted {
+    background-position: 100% 0%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="2"] .face.face-2.extroverted {
+    background-position: 100% 0%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="2"] .face.face-3.extroverted {
+    background-position: 0% 0%;
+}
+
+/* 3 */
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="3"] .face.face-1.extroverted {
+    background-position: 0% 50%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="3"] .face.face-4.extroverted {
+    background-position: 50% 0%;
+}
+
+/* 4 */
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="4"] .face.face-1.extroverted {
+    background-position: 50% 50%;
+}
+
+/* 5 */
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="5"] .face.face-1.extroverted {
+    background-position: 100% 50%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="5"] .face.face-2.extroverted {
+    background-position: 50% 0%;
+}
+
+/* 6 */
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="6"] .face.face-0.extroverted {
+    background-position: 0% 0%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="6"] .face.face-1.extroverted {
+    background-position: 0% 100%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="6"] .face.face-4.extroverted {
+    background-position: 100% 0%;
+}
+
+/* 7 */
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="7"] .face.face-0.extroverted {
+    background-position: 50% 0%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="7"] .face.face-1.extroverted {
+    background-position: 50% 100%;
+}
+
+/* 8 */
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="8"] .face.face-0.extroverted {
+    background-position: 100% 0%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="8"] .face.face-1.extroverted {
+    background-position: 100% 100%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="8"] .face.face-2.extroverted {
+    background-position: 0% 0%;
+}
+
+/* 9 */
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="9"] .face.face-3.extroverted {
+    background-position: 100% 50%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="9"] .face.face-4.extroverted {
+    background-position: 0% 50%;
+}
+
+/* 10 */
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="10"] .face.face-3.extroverted {
+    background-position: 50% 50%;
+}
+
+/* 11 */
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="11"] .face.face-2.extroverted {
+    background-position: 100% 50%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="11"] .face.face-3.extroverted {
+    background-position: 0% 50%;
+}
+
+/* 12 */
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="12"] .face.face-4.extroverted {
+    background-position: 50% 50%;
+}
+
+/* 13 */
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="14"] .face.face-0.extroverted {
+    background-position: 50% 50%;
+}
+
+/* 15 */
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="15"] .face.face-0.extroverted {
+    background-position: 0% 50%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="15"] .face.face-4.extroverted {
+    background-position: 100% 50%;
+}
+
+/* 16 */
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="16"] .face.face-0.extroverted {
+    background-position: 50% 50%;
+}
+
+/* 17 */
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="17"] .face.face-0.extroverted {
+    background-position: 100% 50%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="17"] .face.face-2.extroverted {
+    background-position: 0% 50%;
+}
+
+
+/* 18 */
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="18"] .face.face-3.extroverted {
+    background-position: 100% 100%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="18"] .face.face-4.extroverted {
+    background-position: 0% 100%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="18"] .face.face-5.extroverted {
+    background-position: 0% 100%;
+}
+
+/* 19 */
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="19"] .face.face-3.extroverted {
+    background-position: 50% 100%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="19"] .face.face-5.extroverted {
+    background-position: 50% 100%;
+}
+
+/* 20*/
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="20"] .face.face-2.extroverted {
+    background-position: 100% 100%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="20"] .face.face-3.extroverted {
+    background-position: 0% 100%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="20"] .face.face-5.extroverted {
+    background-position: 100% 100%;
+}
+
+/* 21 */
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="21"] .face.face-4.extroverted {
+    background-position: 50% 100%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="21"] .face.face-5.extroverted {
+    background-position: 0% 50%;
+}
+
+/* 22 */
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="22"] .face.face-5.extroverted {
+    background-position: 50% 50%;
+}
+
+/* 23 */
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="23"] .face.face-2.extroverted {
+    background-position: 50% 100%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="23"] .face.face-5.extroverted {
+    background-position: 100% 50%;
+}
+
+/* 24 */
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="24"] .face.face-0.extroverted {
+    background-position: 0% 100%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="24"] .face.face-4.extroverted {
+    background-position: 100% 100%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="24"] .face.face-5.extroverted {
+    background-position: 0% 0%;
+}
+
+/* 25 */
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="25"] .face.face-0.extroverted {
+    background-position: 50% 100%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="25"] .face.face-5.extroverted {
+    background-position: 50% 0%;
+}
+
+/* 26 */
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="26"] .face.face-0.extroverted {
+    background-position: 100% 100%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="26"] .face.face-2.extroverted {
+    background-position: 0% 100%;
+}
+
+[data-name="cube3x3x3"][data-appearance="picture"] [data-box-id="26"] .face.face-5.extroverted {
+    background-position: 100% 0%;
+}
+
+/* /////////////////// */
+
+/* 2x2 cube */
+[data-name="cube2x2x2"][data-appearance="picture"] [data-box-id="0"] .face.face-1.extroverted {
+    background-position: 0% 0%;
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] [data-box-id="1"] .face.face-1.extroverted {
+    background-position: 100% 0%;
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] [data-box-id="2"] .face.face-1.extroverted {
+    background-position: 0% 100%;
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] [data-box-id="3"] .face.face-1.extroverted {
+    background-position: 100% 100%;
+}
+
+
+[data-name="cube2x2x2"][data-appearance="picture"] [data-box-id="0"] .face.face-3.extroverted {
+    background-position: 100% 0%;
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] [data-box-id="1"] .face.face-3.extroverted {
+    background-position: 0% 0%;
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] [data-box-id="5"] .face.face-3.extroverted {
+    background-position: 0% 100%;
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] [data-box-id="4"] .face.face-3.extroverted {
+    background-position: 100% 100%;
+}
+
+
+[data-name="cube2x2x2"][data-appearance="picture"] [data-box-id="0"] .face.face-4.extroverted {
+    background-position: 0% 0%;
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] [data-box-id="2"] .face.face-4.extroverted {
+    background-position: 100% 0%;
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] [data-box-id="4"] .face.face-4.extroverted {
+    background-position: 0% 100%;
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] [data-box-id="6"] .face.face-4.extroverted {
+    background-position: 100% 100%;
+}
+
+
+[data-name="cube2x2x2"][data-appearance="picture"] [data-box-id="2"] .face.face-0.extroverted {
+    background-position: 0% 0%;
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] [data-box-id="3"] .face.face-0.extroverted {
+    background-position: 100% 0%;
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] [data-box-id="6"] .face.face-0.extroverted {
+    background-position: 0% 100%;
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] [data-box-id="7"] .face.face-0.extroverted {
+    background-position: 100% 100%;
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] [data-box-id="3"] .face.face-2.extroverted {
+    background-position: 0% 0%;
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] [data-box-id="1"] .face.face-2.extroverted {
+    background-position: 100% 0%;
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] [data-box-id="7"] .face.face-2.extroverted {
+    background-position: 0% 100%;
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] [data-box-id="5"] .face.face-2.extroverted {
+    background-position: 100% 100%;
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] [data-box-id="6"] .face.face-5.extroverted {
+    background-position: 0% 0%;
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] [data-box-id="7"] .face.face-5.extroverted {
+    background-position: 100% 0%;
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] [data-box-id="4"] .face.face-5.extroverted {
+    background-position: 0% 100%;
+}
+
+[data-name="cube2x2x2"][data-appearance="picture"] [data-box-id="5"] .face.face-5.extroverted {
+    background-position: 100% 100%;
+}

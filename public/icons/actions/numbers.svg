@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" >
+    <polygon 
+        points="13,25 70,25 87,52.5 70,75 13,75"
+        fill="white"
+    />
+    <text   
+        x="45.5" 
+        y="53.5"
+        font-family="monospace"
+        font-size="35"
+        dominant-baseline="middle"
+        text-anchor="middle"
+        fill="black"
+        font-weight="bold"
+    >
+    4
+    </text>
+</svg>

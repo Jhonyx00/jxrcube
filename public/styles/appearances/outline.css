@@ -1,0 +1,57 @@
+[data-appearance="outline"] .face-0.extroverted {
+    background-image: url("../../images/appearances/color-based/outline/color-0.svg");
+}
+
+[data-appearance="outline"] .face-1.extroverted {
+    background-image: url("../../images/appearances/color-based/outline/color-1.svg");
+}
+
+[data-appearance="outline"] .face-2.extroverted {
+    background-image: url("../../images/appearances/color-based/outline/color-2.svg");
+}
+
+[data-appearance="outline"] .face-3.extroverted {
+    background-image: url("../../images/appearances/color-based/outline/color-3.svg");
+}
+
+[data-appearance="outline"] .face-4.extroverted {
+    background-image: url("../../images/appearances/color-based/outline/color-4.svg");
+}
+
+[data-appearance="outline"] .face-5.extroverted {
+    background-image: url("../../images/appearances/color-based/outline/color-5.svg");
+}
+
+/* labels */
+[data-appearance="outline"] .face-0 {
+    color: #2155e4ff;
+}
+
+[data-appearance="outline"] .face-1 {
+    color: #ffffff;
+}
+
+[data-appearance="outline"] .face-2 {
+    color: #ff6d13ff;
+}
+
+[data-appearance="outline"] .face-3 {
+    color: #00a811ff;
+}
+
+[data-appearance="outline"] .face-4 {
+    color: #FF0000;
+}
+
+[data-appearance="outline"] .face-5 {
+    color: #ffce0aff;
+}
+
+[data-name="mirror3x3x3"][data-appearance="outline"] .extroverted {
+    background-image: url("../../images/appearances/shape-mod/outline.svg");
+}
+
+/* labels */
+[data-name="mirror3x3x3"][data-appearance="outline"] .face.extroverted {
+    color: #0028b9;
+}

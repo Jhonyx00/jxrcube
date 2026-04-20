@@ -1,0 +1,48 @@
+[data-appearance="pastel"] .face-0.extroverted {
+    background-image: url("../../images/appearances/color-based/pastel/color-0.svg");
+}
+
+[data-appearance="pastel"] .face-1.extroverted {
+    background-image: url("../../images/appearances/color-based/pastel/color-1.svg");
+}
+
+[data-appearance="pastel"] .face-2.extroverted {
+    background-image: url("../../images/appearances/color-based/pastel/color-2.svg");
+}
+
+[data-appearance="pastel"] .face-3.extroverted {
+    background-image: url("../../images/appearances/color-based/pastel/color-3.svg");
+}
+
+[data-appearance="pastel"] .face-4.extroverted {
+    background-image: url("../../images/appearances/color-based/pastel/color-4.svg");
+}
+
+[data-appearance="pastel"] .face-5.extroverted {
+    background-image: url("../../images/appearances/color-based/pastel/color-5.svg");
+}
+
+/* labels */
+[data-appearance="pastel"] .face-0 {
+    color: hsl(207, 100%, 35%);
+}
+
+[data-appearance="pastel"] .face-1 {
+    color: hsl(0, 0%, 35%);
+}
+
+[data-appearance="pastel"] .face-2 {
+    color: hsla(17, 100%, 35%);
+}
+
+[data-appearance="pastel"] .face-3 {
+    color: hsl(150, 100%, 35%);
+}
+
+[data-appearance="pastel"] .face-4 {
+    color: hsl(346, 100%, 35%);
+}
+
+[data-appearance="pastel"] .face-5 {
+    color: hsl(51, 100%, 35%);
+}

@@ -1,0 +1,46 @@
+[data-appearance="hollow"] .face-0.extroverted,
+[data-appearance="hollow"] .face-0.extroverted {
+    background-image: url("../../images/appearances/color-based/hollow/color-0.svg");
+}
+
+[data-appearance="hollow"] .face-1.extroverted,
+[data-appearance="hollow"] .face-1.extroverted {
+    background-image: url("../../images/appearances/color-based/hollow/color-1.svg");
+}
+
+[data-appearance="hollow"] .face-2.extroverted,
+[data-appearance="hollow"] .face-2.extroverted {
+    background-image: url("../../images/appearances/color-based/hollow/color-2.svg");
+}
+
+[data-appearance="hollow"] .face-3.extroverted,
+[data-appearance="hollow"] .face-3.extroverted {
+    background-image: url("../../images/appearances/color-based/hollow/color-3.svg");
+}
+
+[data-appearance="hollow"] .face-4.extroverted,
+[data-appearance="hollow"] .face-4.extroverted {
+    background-image: url("../../images/appearances/color-based/hollow/color-4.svg");
+}
+
+[data-appearance="hollow"] .face-5.extroverted,
+[data-appearance="hollow"] .face-5.extroverted {
+    background-image: url("../../images/appearances/color-based/hollow/color-5.svg");
+}
+
+/* labels */
+[data-appearance="hollow"] .face.extroverted {
+    color: #ffffff;
+}
+
+[data-name="cube3x3x3"][data-appearance="hollow"] [data-box-id="13"] .face {
+    color: #ffffff;
+}
+
+[data-name="cube3x3x3"][data-appearance="hollow"] .box:not([data-box-id="13"]) .face:not(.extroverted) {
+    color: transparent;
+}
+
+[data-name="cube2x2"][data-appearance="hollow"] .face:not(.extroverted) {
+    color: transparent;
+}

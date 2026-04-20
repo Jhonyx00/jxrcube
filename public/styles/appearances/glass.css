@@ -1,0 +1,33 @@
+[data-appearance="glass"] .face-0 {
+    background-image: url("../../images/appearances/color-based/glass/color-0.svg");
+}
+
+[data-appearance="glass"] .face-1 {
+    background-image: url("../../images/appearances/color-based/glass/color-1.svg");
+}
+
+[data-appearance="glass"] .face-2 {
+    background-image: url("../../images/appearances/color-based/glass/color-2.svg");
+}
+
+[data-appearance="glass"] .face-3 {
+    background-image: url("../../images/appearances/color-based/glass/color-3.svg");
+}
+
+[data-appearance="glass"] .face-4 {
+    background-image: url("../../images/appearances/color-based/glass/color-4.svg");
+}
+
+[data-appearance="glass"] .face-5 {
+    background-image: url("../../images/appearances/color-based/glass/color-5.svg");
+}
+
+/* labels */
+[data-appearance="glass"] .face {
+    color: #ffffff9e;
+}
+
+[data-appearance="glass"] .face-1,
+[data-appearance="glass"] .face-5 {
+    color: #0000009e;
+}
