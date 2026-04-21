@@ -270,6 +270,10 @@ class Puzzle {
         this.#cubelets = cubelets;
     }
 
+    get selectedCubelet() {
+        return this.#selectedCubelet;
+    }
+
     get state() { return this.#state };
 
     get container() { return this.#container; }

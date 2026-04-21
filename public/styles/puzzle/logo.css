@@ -30,6 +30,7 @@
     background-image: url("../../icons/main/logo.svg");
 }
 
+[data-name="cube4x4x2"][data-labels="none"] [data-box-id="5"] .face-1.extroverted::after,
 [data-name="cube4x4x4"][data-labels="none"] [data-box-id="5"] .face-1.extroverted::after {
     content: "";
     position: absolute;

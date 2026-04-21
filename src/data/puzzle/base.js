@@ -16,6 +16,22 @@ const PUZZLE_BASE_DATA = {
             "top-right": "top-right"
         },
     },
+    "4x4x2": {
+        order: {
+            w: 2,
+            h: 4,
+            d: 4,
+        },
+        indexToAxis: { 0: -1.5, 1: -0.5, 2: 0.5, 3: 1.5 },
+        cubeletOptions: {
+            "all": "all",
+            "void": "void",
+            "corners": "corners",
+            "edges": "edges",
+            "slice": "slice",
+            "centers": "centers",
+        },
+    },
     "3x3x3": {
         order: {
             w: 3,
