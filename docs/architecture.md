@@ -57,7 +57,7 @@ The PuzzleManager instance requires two components:
 - A Scene object (handles 3D rendering).
 - An Initial Data Object containing puzzle instances, such as **Cube3x3x3**.
 
-The **Cube2x2x2**, **Cube3x3x3**, **Cube4x4x4**, **Mirror3x3x3**, **Cube3x3x4**, and **Cube3x3x5** classes inherit from Puzzle (the "brain"). Internally, they require a Container3D instance (a group for 3D elements) where the Box3D cubelets are stored.
+The **Cube2x2x2**, **Cube3x3x3**, **Cube4x4x4**, **Mirror3x3x3**, **Cube3x3x4**, **Cube4x4x2** and **Cube3x3x5** classes inherit from Puzzle (the "brain"). Internally, they require a Container3D instance (a group for 3D elements) where the Box3D cubelets are stored.
 
 #### Build
 The **PuzzleManager** class includes an initialization method that runs once at startup to set everything in motion. This process involves interaction with two additional classes:
@@ -109,6 +109,7 @@ The file structure reflects the project's modular architecture, enabling the dev
 │   │   ├───cube3x3x5             # 3x3x5 cuboid model
 │   │   ├───cube4x4x4             # 4x4x4 cube model
 │   │   └───mirror3x3x3           # 3x3x3 mirror cube model 
+│   │   └───cube4x4x2             # 4x4x2 cuboid cube model 
 |   └───types                     # .js files for type definitions.
 |   └───main.js                   # Main javascript entry point
 └───README.MD                     # Main documentation
@@ -155,6 +156,7 @@ classDiagram
         class Cube4x4x4
         class Cube3x3x4
         class Cube3x3x5
+        class Cube4x4x2
     }
 
     namespace UI_Components {
@@ -169,6 +171,7 @@ classDiagram
     Puzzle <|-- Cube4x4x4 : Inheritance
     Puzzle <|-- Cube3x3x4 : Inheritance
     Puzzle <|-- Cube3x3x5 : Inheritance
+    Puzzle <|-- Cube4x4x2 : Inheritance
     
     PuzzleManager o-- Puzzle : Manages
     PuzzleController --> PuzzleManager : Controls
@@ -289,6 +292,13 @@ classDiagram
         +solve() void
     }
 
+    class Cube4x4x2{
+        +moves() Record~String, String~
+        +slices() Record~String, Slice~
+        +movesMap() Record~String, FaceCoord[]~
+        +solve() void
+    }
+
     class PuzzleManager{
         -scene: Scene
         -puzzlesData: Record~String, PuzzleDynamicState~
@@ -323,6 +333,7 @@ classDiagram
     Cube4x4x4 --|> Puzzle : Inheritance
     Cube3x3x4 --|> Puzzle : Inheritance
     Cube3x3x5 --|> Puzzle : Inheritance
+    Cube4x4x2 --|> Puzzle : Inheritance
 
     class Box3D {
         -id: number
