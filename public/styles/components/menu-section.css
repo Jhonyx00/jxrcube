@@ -21,7 +21,7 @@
  .fixed-size {
      max-height: 2.25rem;
      overflow: auto;
-     scrollbar-width: none;
+     min-width: 2.25rem;
  }
 
  .fixed-position {
