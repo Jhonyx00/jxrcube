@@ -21,8 +21,6 @@ class Cube3x3x3 extends Puzzle {
         );
     }
 
-    static name = "";
-
     get moves() {
         return N_3_MOVES;
     }

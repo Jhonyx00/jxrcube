@@ -1,6 +1,11 @@
+/**
+ * Represents a cube 4x4x2 puzzle.
+ * @extends Puzzle
+ */
+
 class Cube4x4x2 extends Puzzle {
     /**
-     * Constructs a cube 3x3x3 puzzle.
+     * Constructs a cube 4x4x2 puzzle.
      */
     constructor() {
         const key = "cube4x4x2";
