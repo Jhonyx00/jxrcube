@@ -45,15 +45,6 @@ const puzzlesDynamicState = {
             matrix: {}
         }
     },
-    "cube4x4x2": {
-        ref: new Cube4x4x2(),
-        actions: {},
-        cubeletOption: "",
-        config: {
-            appearance: "",
-            matrix: {}
-        }
-    },
     "cube3x3x5": {
         ref: new Cube3x3x5(),
         actions: {},
@@ -65,6 +56,15 @@ const puzzlesDynamicState = {
     },
     "cube3x3x4": {
         ref: new Cube3x3x4(),
+        actions: {},
+        cubeletOption: "",
+        config: {
+            appearance: "",
+            matrix: {}
+        }
+    },
+    "cube4x4x2": {
+        ref: new Cube4x4x2(),
         actions: {},
         cubeletOption: "",
         config: {
