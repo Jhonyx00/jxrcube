@@ -83,7 +83,6 @@ class PuzzleController {
      * @param {KeyboardEvent} e - The keyboard event object. 
      */
     #onDocumentKeydown(e) {
-        // if (e.ctrlKey || e.key === "F12") e.preventDefault();
         if (this.#puzzleState.isKeyPressed) return;
         const movekey = e.key.toUpperCase();
         if (e.shiftKey) {
