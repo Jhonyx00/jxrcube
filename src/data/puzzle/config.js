@@ -43,7 +43,7 @@ const PUZZLE_CONFIG = {
         },
     },
     "cube3x3x1": {
-        cubeletSize: 60,
+        cubeletSize: 66,
         maxPositionFactor: 1,
         signExpansionFactor: 150,
         appearanceNames: {
