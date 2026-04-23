@@ -11,6 +11,7 @@
 }
 
 [data-name="mirror3x3x3"][data-labels="none"] [data-box-id="4"] .face-1.extroverted::after,
+[data-name="cube3x3x1"][data-labels="none"] [data-box-id="4"] .face-1.extroverted::after,
 [data-name="cube3x3x4"][data-labels="none"] [data-box-id="4"] .face-1.extroverted::after,
 [data-name="cube3x3x5"][data-labels="none"] [data-box-id="4"] .face-1.extroverted::after {
     content: "";
