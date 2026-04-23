@@ -42,6 +42,19 @@ const PUZZLE_CONFIG = {
             label: "\u2764" //heart
         },
     },
+    "cube3x3x1": {
+        cubeletSize: 60,
+        maxPositionFactor: 1,
+        signExpansionFactor: 150,
+        appearanceNames: {
+            ...DEFAULT_APPEARANCES,
+            ...REGULAR_PUZZLE_APPEARANCES,
+        },
+        coreData: {
+            list: {},
+            label: "\u2764" //heart
+        }
+    },
     "cube4x4x2": {
         cubeletSize: 54,
         maxPositionFactor: 1.5,

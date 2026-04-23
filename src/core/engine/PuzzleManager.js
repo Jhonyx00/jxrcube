@@ -40,7 +40,7 @@ class PuzzleManager {
         this.#puzzlesData = puzzlesData;
         this.#scene = scene;
         this.#puzzleNames = Object.keys(this.#puzzlesData);
-        this.#currentKey = localStorage.getItem("selected") || this.puzzleNames[1]; // Default puzzle (3x3 cube).
+        this.#currentKey = localStorage.getItem("selected") || this.puzzleNames[7]; // Default puzzle (3x3 cube).
         this.#currentPuzzle = this.#puzzlesData[this.#currentKey].ref;
     }
 
@@ -94,9 +94,16 @@ class PuzzleManager {
                 maxPositionFactor: puzzleRef.maxPositionFactor,
             }
 
-            const cubeletsData = name === "mirror3x3x3"
-                ? PuzzleBuilder.generateIrregularCubeletsData(buildData)
-                : PuzzleBuilder.generateCubeletsData(buildData);
+            let cubeletsData;
+            if (name === "mirror3x3x3") {
+                cubeletsData = PuzzleBuilder.generateIrregularCubeletsData(buildData);
+            }
+            else if (name === "cube3x3x1") {
+                cubeletsData = PuzzleBuilder.generateSingleLayerCubeletsData(buildData);
+            }
+            else {
+                cubeletsData = PuzzleBuilder.generateMultipleLayerCubeletsData(buildData);
+            }
 
             const cubelets = PuzzleFactory.createBasicBoxes(cubeletsData, state); // The array that contains the Box3D instanes.
 

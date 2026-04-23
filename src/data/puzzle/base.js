@@ -32,6 +32,22 @@ const PUZZLE_BASE_DATA = {
             "centers": "centers",
         },
     },
+    "3x3x1": {
+        order: {
+            w: 3,
+            h: 3,
+            d: 1,
+        },
+        indexToAxis: { 0: -1, 1: 0, 2: 1 },
+        cubeletOptions: {
+            "all": "all",
+            "void": "void",
+            "corners": "corners",
+            "cross": "cross",
+            "edges": "edges",
+            "centers": "centers",
+        },
+    },
     "3x3x3": {
         order: {
             w: 3,

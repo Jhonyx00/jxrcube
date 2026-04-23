@@ -351,13 +351,21 @@ class Puzzle {
     }
 
     /**
+     * Filters a cubelets by the provided callback.
+     * @param {function():void|null} callback - The filter callback. 
+     * @returns - The filtered cubelets.
+     */
+    filterCubelets(callback) {
+        return this.#cubelets.filter(callback);
+    }
+
+    /**
      * Gets the filtered cubelets array size.
      * @param {Function} callback - Filter callback.
      * @returns {number} The array length.
      */
     getFilteredCubeletsSize(callback) {
-        const array = this.#cubelets.filter(callback);
-        return array.length;
+        return this.#cubelets.filter(callback).length;
     }
 
     /**

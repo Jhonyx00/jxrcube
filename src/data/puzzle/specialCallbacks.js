@@ -20,4 +20,6 @@ const SPECIAL_CALLBACKS = {
 
     "B": cubelet => cubelet.matrix.getGridPositionZ(cubelet.size) < 0,
     "b": cubelet => cubelet.matrix.getGridPositionZ(cubelet.size) < 0,
+
+    "0": cubelet => false,
 }

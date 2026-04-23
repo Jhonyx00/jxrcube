@@ -72,6 +72,15 @@ const puzzlesDynamicState = {
             matrix: {}
         }
     },
+    "cube3x3x1": {
+        ref: new Cube3x3x1(),
+        actions: {},
+        cubeletOption: "",
+        config: {
+            appearance: "",
+            matrix: {}
+        }
+    },
 }
 
 /**

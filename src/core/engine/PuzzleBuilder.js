@@ -13,7 +13,7 @@ class PuzzleBuilder {
      * @param {BuildData} buildData - The puzzle build data.
      * @returns {CubeletData[]} An object containing all the cubelets.
      */
-    static generateCubeletsData = ({ order, offset = { x: 0, y: 0, z: 0 }, cubeletSize, indexToAxis, maxPositionFactor }) => {
+    static generateMultipleLayerCubeletsData = ({ order, offset = { x: 0, y: 0, z: 0 }, cubeletSize, indexToAxis, maxPositionFactor }) => {
         /** @type {CubeletData} */
         const cubeletsData = [];
         let id = 0;
@@ -48,6 +48,53 @@ class PuzzleBuilder {
                         extrovertedIds: extrovertedIds,
                     });
                 }
+            }
+        }
+        return cubeletsData;
+    }
+
+    /**
+     * Creates a puzzle raw data structure for all cubelets.
+     * Each cubelet is represented as an object with id, position, dimension, type, expansionFactor and the extrovertedIds.
+     * Each cubelet raw data is a **cube**.
+     * @param {BuildData} buildData - The puzzle build data.
+     * @returns {CubeletData[]} An object containing all the cubelets.
+     */
+    static generateSingleLayerCubeletsData = ({ order, offset = { x: 0, y: 0, z: 0 }, cubeletSize, indexToAxis, maxPositionFactor }) => {
+        /** @type {CubeletData} */
+        const cubeletsData = [];
+        let id = 0;
+        for (let z = 0; z < order.h; z++) {
+            for (let x = 0; x < order.w; x++) {
+                /** @type {number[]}*/
+                const extrovertedIds = [];
+
+                const posX = indexToAxis[x];
+                const posY = -1;
+                const posZ = indexToAxis[z];
+
+                const position = { x: posX + offset.x, y: posY + offset.y, z: posZ + offset.z };
+
+                // every cubelet has color on up and down faces (1, 5).
+                extrovertedIds.push(1);
+                extrovertedIds.push(5);
+                if (indexToAxis[z] === maxPositionFactor) { extrovertedIds.push(0); }
+                if (indexToAxis[x] === maxPositionFactor) { extrovertedIds.push(2); }
+                if (indexToAxis[z] === -maxPositionFactor) { extrovertedIds.push(3); }
+                if (indexToAxis[x] === -maxPositionFactor) { extrovertedIds.push(4); }
+
+                const idLength = extrovertedIds.length;
+
+                // the corners now have 4 colors instead of 3, the edges now have 3 colors instead of 2, and centers now have 2 colors instead of 1.
+                const type = idLength === 4 ? "corner" : idLength === 3 ? "edge" : idLength === 2 ? "center" : idLength === 1 ? "core" : "none";
+
+                cubeletsData.push({
+                    id: id++,
+                    type: type,
+                    position: position,
+                    dimension: `size-${cubeletSize}`,
+                    extrovertedIds: extrovertedIds,
+                });
             }
         }
         return cubeletsData;
