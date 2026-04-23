@@ -17,10 +17,10 @@ class PuzzleBuilder {
         /** @type {CubeletData} */
         const cubeletsData = [];
         let id = 0;
-        for (let y = 0; y < order.w; y++) {
+        const indexDiff = order.d - order.h;
+        for (let y = 0; y < order.d; y++) {
             for (let z = 0; z < order.h; z++) {
-                for (let x = 0; x < order.d; x++) {
-
+                for (let x = 0; x < order.w; x++) {
                     /** @type {number[]}*/
                     const extrovertedIds = [];
 
@@ -35,7 +35,7 @@ class PuzzleBuilder {
                     if (indexToAxis[x] === maxPositionFactor) { extrovertedIds.push(2); }
                     if (indexToAxis[z] === -maxPositionFactor) { extrovertedIds.push(3); }
                     if (indexToAxis[x] === -maxPositionFactor) { extrovertedIds.push(4); }
-                    if (indexToAxis[y] === maxPositionFactor + (order.w - order.h)) { extrovertedIds.push(5); }
+                    if (indexToAxis[y] === maxPositionFactor + indexDiff) { extrovertedIds.push(5); }
 
                     const idLength = extrovertedIds.length;
                     const type = idLength === 3 ? "corner" : idLength === 2 ? "edge" : idLength === 1 ? "center" : "core";

@@ -18,9 +18,9 @@ const PUZZLE_BASE_DATA = {
     },
     "4x4x2": {
         order: {
-            w: 2,
+            w: 4,
             h: 4,
-            d: 4,
+            d: 2,
         },
         indexToAxis: { 0: -1.5, 1: -0.5, 2: 0.5, 3: 1.5 },
         cubeletOptions: {
@@ -85,9 +85,9 @@ const PUZZLE_BASE_DATA = {
     },
     "3x3x4": {
         order: {
-            w: 4,
+            w: 3,
             h: 3,
-            d: 3,
+            d: 4,
         },
         indexToAxis: { 0: -1, 1: 0, 2: 1, 3: 2, 4: 3 },
         cubeletOptions: {
@@ -101,9 +101,9 @@ const PUZZLE_BASE_DATA = {
     },
     "3x3x5": {
         order: {
-            w: 5,
+            w: 3,
             h: 3,
-            d: 3,
+            d: 5,
         },
         indexToAxis: { 0: -1, 1: 0, 2: 1, 3: 2, 4: 3 },
         cubeletOptions: {
