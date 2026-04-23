@@ -40,7 +40,7 @@ class PuzzleManager {
         this.#puzzlesData = puzzlesData;
         this.#scene = scene;
         this.#puzzleNames = Object.keys(this.#puzzlesData);
-        this.#currentKey = localStorage.getItem("selected") || this.puzzleNames[7]; // Default puzzle (3x3 cube).
+        this.#currentKey = localStorage.getItem("selected") || this.puzzleNames[1]; // Default puzzle (3x3 cube).
         this.#currentPuzzle = this.#puzzlesData[this.#currentKey].ref;
     }
 
