@@ -12,6 +12,7 @@
 /* cube 3x3 */
 [data-name="cube3x3x3"][data-visible-cubelets="slice"] .box:not([data-box-id="0"], [data-box-id="1"], [data-box-id="2"], [data-box-id="3"], [data-box-id="4"], [data-box-id="5"], [data-box-id="6"], [data-box-id="7"], [data-box-id="8"]) .face,
 [data-name="cube3x3x3"][data-visible-cubelets="cross"] .box:not([data-box-id="1"], [data-box-id="3"], [data-box-id="4"], [data-box-id="5"], [data-box-id="7"]) .face,
+[data-name="cube3x3x1"][data-visible-cubelets="cross"] .box:not([data-box-id="1"], [data-box-id="3"], [data-box-id="4"], [data-box-id="5"], [data-box-id="7"]) .face,
 [data-name="cube3x3x3"][data-visible-cubelets="two-slices"] .box:not([data-box-id="0"], [data-box-id="1"], [data-box-id="2"], [data-box-id="3"], [data-box-id="4"], [data-box-id="5"], [data-box-id="6"], [data-box-id="7"], [data-box-id="8"], [data-box-id="9"], [data-box-id="10"], [data-box-id="11"], [data-box-id="12"], [data-box-id="13"], [data-box-id="14"], [data-box-id="15"], [data-box-id="16"], [data-box-id="17"]) .face,
 
 /* mirror 3x3*/
