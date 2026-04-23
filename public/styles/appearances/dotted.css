@@ -1,0 +1,33 @@
+[data-appearance="dotted"] .face-0.extroverted {
+    background-image: url("../../images/appearances/color-based/dotted/color-0.svg");
+}
+
+[data-appearance="dotted"] .face-1.extroverted {
+    background-image: url("../../images/appearances/color-based/dotted/color-1.svg");
+}
+
+[data-appearance="dotted"] .face-2.extroverted {
+    background-image: url("../../images/appearances/color-based/dotted/color-2.svg");
+}
+
+[data-appearance="dotted"] .face-3.extroverted {
+    background-image: url("../../images/appearances/color-based/dotted/color-3.svg");
+}
+
+[data-appearance="dotted"] .face-4.extroverted {
+    background-image: url("../../images/appearances/color-based/dotted/color-4.svg");
+}
+
+[data-appearance="dotted"] .face-5.extroverted {
+    background-image: url("../../images/appearances/color-based/dotted/color-5.svg");
+}
+
+/* labels */
+[data-appearance="dotted"] .face {
+    color: #ffffff;
+}
+
+[data-appearance="dotted"] .face-1.extroverted,
+[data-appearance="dotted"] .face-5.extroverted {
+    color: #000000;
+}

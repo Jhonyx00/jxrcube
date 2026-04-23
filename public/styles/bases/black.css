@@ -6,6 +6,7 @@
 [data-appearance="monochromatic"] .face,
 [data-appearance="chromatic"] .face,
 [data-appearance="cosmic noise"] .face,
+[data-appearance="dotted"] .face,
 [data-appearance="colored"] .face {
     background-color: #000000;
 }
