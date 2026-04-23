@@ -62,6 +62,14 @@ const cubeletIcons = {
         "edges": "./public/icons/cubelets/cube4x4x4/edges.svg",
         "centers": "./public/icons/cubelets/cube4x4x4/centers.svg",
     },
+    cube3x3x1: {
+        "all": "./public/icons/cubelets/cube3x3x3/all.svg",
+        "void": "./public/icons/cubelets/cube3x3x3/void.svg",
+        "cross": "./public/icons/cubelets/cube3x3x3/cross.svg",
+        "corners": "./public/icons/cubelets/cube3x3x3/corners.svg",
+        "edges": "./public/icons/cubelets/cube3x3x3/edges.svg",
+        "centers": "./public/icons/cubelets/cube3x3x3/centers.svg",
+    },
 }
 
 // Icons for the puzzle appearance options.
