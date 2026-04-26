@@ -10,6 +10,10 @@
     font-size: 1.1rem;
 }
 
+[data-name="cube3x3x1"] .face {
+    font-size: 1.15rem;
+}
+
 [data-name="cube4x4x4"] .face {
     font-size: 0.9rem;
 }
