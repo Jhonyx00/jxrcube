@@ -89,6 +89,7 @@
     mix-blend-mode: difference;
     color: rgba(255, 255, 255, 0.3);
     width: max-content;
+    pointer-events: all;
 }
 
 span.active {
