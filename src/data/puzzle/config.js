@@ -49,7 +49,8 @@ const PUZZLE_CONFIG = {
         appearanceNames: {
             ...DEFAULT_APPEARANCES,
             ...REGULAR_PUZZLE_APPEARANCES,
-            "dotted": "dotted"
+            "dotted": "dotted",
+            "monochromatic": "monochromatic"
         },
         coreData: {
             list: {},
