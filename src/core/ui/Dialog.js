@@ -39,7 +39,7 @@ class Dialog {
         this.#element.classList.add("dialog", "hidden");
 
         this.#contentContainer = document.createElement("div");
-        this.#contentContainer.classList.add("content-container", "scroll");
+        this.#contentContainer.classList.add("content-container", "scroll", "overflow-auto");
 
         this.#closeBtn = document.createElement("button");
         this.#closeBtn.classList.add("btn", "close-dialog-btn");

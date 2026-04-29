@@ -96,8 +96,8 @@ const puzzleButtonOptions = {
     name: "puzzles",
     title: "true",
     singleSelection: true,
-    classList: ["fixed-position", "row-container"],
-    btnGroupClassList: ["fixed-size", "scroll", "opaque-btns"],
+    classList: ["top-1", "left-0", "fixed", "w-fit", "row-container", "items-center", "m-0-1"],
+    btnGroupClassList: ["fixed-size", "max-h-5", "min-w-2_65", "overflow-auto", "scroll", "opaque-btns"],
     hover: false,
 }
 

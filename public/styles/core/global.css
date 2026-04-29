@@ -56,3 +56,43 @@
  .opacity .face {
      opacity: var(--opacity);
  }
+
+ .overflow-auto {
+     overflow: auto;
+ }
+
+ .max-h-5 {
+     max-height: 5rem;
+ }
+
+ .min-w-2_65 {
+     min-width: 2.65rem;
+ }
+
+ .w-fit {
+     width: calc(100vw - 5.25em);
+ }
+
+ .fixed {
+     position: fixed;
+ }
+
+ .top-1 {
+     top: 1rem;
+ }
+
+ .left-0 {
+     left: 0rem;
+ }
+
+ .m-0-1 {
+     margin: 0 1em;
+ }
+
+ .items-center {
+     align-items: center;
+ }
+
+ .column-container {
+     flex-direction: column;
+ }
