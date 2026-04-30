@@ -134,18 +134,6 @@ class PuzzleManager {
         });
 
         this.#renderSelected();
-
-        /**
-         * @type {{numbers:function():void, faces:function():void, direction:function():void, scramble:function():void, rotate:function():void}}
-         */
-        this.actions = {
-            "numbers": () => this.#currentPuzzle.addLabels(),
-            "faces": () => this.#currentPuzzle.displayFaceLabels(),
-            "direction": () => this.#currentPuzzle.direction(),
-            "scramble": () => this.#currentPuzzle.scramble(),
-            "rotate": () => this.#currentPuzzle.rotate(),
-            "reset": () => this.#currentPuzzle.reset(),
-        }
     }
 
     /**
