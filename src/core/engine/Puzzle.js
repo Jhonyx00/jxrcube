@@ -322,7 +322,7 @@ class Puzzle {
 
     /**
      * Appends the 3D piece main HTML element to a specified parent DOM element.
-     * @param {HTMLElement} parent - The DOM element to which the element will be appended. 
+     * @param {HTMLElement} parent - The DOM element to which the element will be appended.
      */
     render(parent) {
         this.#container.render(parent);
@@ -330,7 +330,7 @@ class Puzzle {
 
     /**
      * Sets the container 3d of the instanced puzzle.
-     * @param {Container3D} container - A Container3D instance. 
+     * @param {Container3D} container - A Container3D instance.
      */
     setContainer(container) {
         if (this.#container) {
@@ -341,7 +341,7 @@ class Puzzle {
 
     /**
      * Sets the sign 3d of the instanced puzzle.
-     * @param {Sign3D} sign3d - A Sign3D instance. 
+     * @param {Sign3D} sign3d - A Sign3D instance.
      */
     setSign3d(sign3d) {
         if (this.#sign3D) {
@@ -352,7 +352,7 @@ class Puzzle {
 
     /**
      * Filters a cubelets by the provided callback.
-     * @param {function():void|null} callback - The filter callback. 
+     * @param {function():void|null} callback - The filter callback.
      * @returns - The filtered cubelets.
      */
     filterCubelets(callback) {
@@ -456,7 +456,7 @@ class Puzzle {
 
     /**
      * Turns a slice specified by the keyboard key.
-     * @param {string} move - A command from the keyboard to perform a move. 
+     * @param {string} move - A command from the keyboard to perform a move.
      */
     turnSliceByCommand(move) {
         if (this.#isScrambling) return;
@@ -505,7 +505,7 @@ class Puzzle {
     }
 
     /**
-     * Freely rotates the puzzle. 
+     * Freely rotates the puzzle.
      */
     rotate() {
         const animationFrame = () => {
@@ -571,7 +571,7 @@ class Puzzle {
 
     /**
      * Displays only the specified cubelet type.
-     * @param {string} cubeletType - The cubelet type (e.g., corner). 
+     * @param {string} cubeletType - The cubelet type (e.g., corner).
      */
     displayCubeletType(cubeletType) {
         this.displayedCubelets = cubeletType;
@@ -580,7 +580,7 @@ class Puzzle {
 
     /**
      * Sets the selected cubelet and selected cubelet face.
-     * @param {HTMLDivElement} element - The clicked element. 
+     * @param {HTMLDivElement} element - The clicked element.
      */
     selectCubelet(element) {
         if (!element) return;
@@ -600,7 +600,6 @@ class Puzzle {
 
     /**
      * Locks the puzzle.
-     * 
      * When the puzzle is locked, no slice can be rotated.
      */
     lock() {
@@ -610,7 +609,6 @@ class Puzzle {
 
     /**
      * Unlocks te puzzle.
-     * 
      * When the puzzle is unlocked, any slice can be rotated.
      */
     unlock() {
