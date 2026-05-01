@@ -90,6 +90,11 @@ Object.entries(dynamicState).forEach(([key, data]) => {
 });
 
 // each new puzzle goes here
+
+/**
+ * An object containing the build data for each puzzle.
+ * @type {BuildData}
+ */
 const buildData = {
     "cube2x2x2": PuzzleBuilder.generateMultipleLayerCubeletsData(puzzleBuildData["cube2x2x2"]),
     "cube3x3x3": PuzzleBuilder.generateMultipleLayerCubeletsData(puzzleBuildData["cube3x3x3"]),

@@ -1,5 +1,5 @@
 /**
- * @type {Object.<string, BaseData>}
+ * @type {Object.<string, BuildData>}
  */
 const BUILD_DATA = {
     "2x2x2": {

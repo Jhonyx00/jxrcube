@@ -48,7 +48,7 @@ class Puzzle {
 
     /**
      * A list of possible moves of the puzzle.
-     * @type {Object.<string, stringnull}
+     * @type {Object.<string, string | null}
      */
     #moveKeys = null;
 
@@ -108,12 +108,12 @@ class Puzzle {
 
     /**
      * Constructs a new puzzle brain.
-     * @param {PuzzleData} baseData - The puzzle data.
-     * @param {PuzzleConfig} buildData - The puzzle config.
+     * @param {BaseData} baseData - The puzzle data.
+     * @param {BuildData} buildData - The puzzle config.
      */
     constructor(baseData, buildData) {
-        this.baseData = baseData; // baseData
-        this.buildData = buildData; // buildData
+        this.baseData = baseData;
+        this.buildData = buildData;
         this.displayedCubelets = "all";
         this.#moveKeys = Object.keys(this.moves);
     }

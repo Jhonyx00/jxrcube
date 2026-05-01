@@ -7,7 +7,7 @@ class PuzzleBuilder {
     }
 
     /**
-     * Creates a puzzle raw data structure for all cubelets.
+     * Creates a puzzle raw data structure for all cubelets for multiple layers.
      * Each cubelet is represented as an object with id, position, dimension, type, expansionFactor and the extrovertedIds.
      * Each cubelet raw data is a **cube**.
      * @param {BuildData} buildData - The puzzle build data.
@@ -54,7 +54,7 @@ class PuzzleBuilder {
     }
 
     /**
-     * Creates a puzzle raw data structure for all cubelets.
+     * Creates a puzzle raw data structure for all cubelets for a single layer.
      * Each cubelet is represented as an object with id, position, dimension, type, expansionFactor and the extrovertedIds.
      * Each cubelet raw data is a **cube**.
      * @param {BuildData} buildData - The puzzle build data.

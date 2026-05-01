@@ -1,17 +1,8 @@
 /**
  * Defines a core data.
- * @typedef {Object} coreData
+ * @typedef {Object} CoreData
  * @property {Object.<string, number>} list - The list of cores.
  * @property {string} label - The label.
- */
-
-/**
- * Defines a puzzle config.
- * @typedef {Object} PuzzleConfig
- * @property {number} cubeletSize - The W index.
- * @property {number} maxPositionFactor - The H index.
- * @property {Object.<string, string>} appearanceNames - The D index.
- * @property {coreData} coreData - The core data.
  */
 
 /**
@@ -87,11 +78,23 @@
  */
 
 /**
+ * Defines an object containing the puzzle build data.
+ * @typedef {Object} BuildData
+ * @property {number} cubeletSize - The puzzle order.
+ * @property {number} maxPositionFactor - The puzzle order.
+ * @property {Order} order - The puzzle order.
+ * @property {Position} offset - The cubelet type, (e.g., corner).
+ * @property {Object.<string, number>} indexToAxis - The puzzle order.
+ */
+
+/**
  * Defines a puzzle base base data.
  * @typedef {Object} BaseData
- * @property {Order} order - The puzzle order.
- * @property {Object.<string, number>} indexToAxis - The grid indx map.
+ * @property {string} name - The name.
+ * @property {CoreData} coreData - The core data.
+ * @property {Object.<string, string>} appearanceNames - The appearance names.
  * @property {Object.<string, string>} cubeletOptions - The cubelet options.
+ * @property {number} signExpansionFactor - The sign expansion factor for the sign 3d.
  */
 
 /**
@@ -102,16 +105,6 @@
  * @property {Position} position - The cubelet position.
  * @property {Dimension|string|number} dimension - The cubelet dimension.
  * @property {Object.<string, number>} extrovertedIds - The cubelet esxtroverted ids
- */
-
-/**
- * Defines an object containing the puzzle build data.
- * @typedef {Object} BuildData
- * @property {Order} order - The puzzle order.
- * @property {Position} offset - The cubelet type, (e.g., corner).
- * @property {Object.<string, number>} indexToAxis - The puzzle order.
- * @property {number} cubeletSize - The puzzle order.
- * @property {number} maxPositionFactor - The puzzle order.
  */
 
 /**

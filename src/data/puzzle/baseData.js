@@ -1,6 +1,6 @@
 /**
  * The appearances that applies to all puzzles.
- * @type {Object.<string, String>}
+ * @type {Object.<string, string>}
  */
 const DEFAULT_APPEARANCES = {
     "classic": "classic",
@@ -11,7 +11,7 @@ const DEFAULT_APPEARANCES = {
 
 /**
  * The recular puzzle appearances.
- * @type {Object.<string, String>}
+ * @type {Object.<string, string>}
  */
 const REGULAR_PUZZLE_APPEARANCES = {
     "pastel": "pastel",
@@ -24,7 +24,7 @@ const REGULAR_PUZZLE_APPEARANCES = {
 
 /**
  * The config for each puzzle.
- * @type {Object.<string, PuzzleConfig>}
+ * @type {Object.<string, BaseData>}
  */
 const BASE_DATA = {
     "cube2x2x2": {

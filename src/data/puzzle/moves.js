@@ -1,6 +1,6 @@
 /**
  * All puzzles have these moves, and keyboard input only allows these moves.
- * @type {Object.<String, string>}
+ * @type {Object.<string, string>}
  */
 const DEFAULT_MOVES = {
     "U": "U", "U'": "U'",
@@ -13,7 +13,7 @@ const DEFAULT_MOVES = {
 
 /**
  * Order 3x3x3 moves
- * @type {Object.<string, String>}
+ * @type {Object.<string, string>}
  */
 const N_3_MOVES = {
     ...DEFAULT_MOVES,
@@ -24,7 +24,7 @@ const N_3_MOVES = {
 
 /**
  * Order 4x4x4 moves
- * @type {Object.<string, String>}
+ * @type {Object.<string, string>}
  */
 const N_4_MOVES = {
     ...DEFAULT_MOVES,
