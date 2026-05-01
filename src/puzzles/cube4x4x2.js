@@ -10,15 +10,9 @@ class Cube4x4x2 extends Puzzle {
     constructor() {
         const key = "cube4x4x2";
         const orderStr = "4x4x2";
-        /** @type {PuzzleData}*/
-        const puzzleData = {
-            name: key,
-            offset: { x: 0, y: 1, z: 0 },
-            ...PUZZLE_BASE_DATA[orderStr]
-        };
         super(
-            puzzleData,
-            PUZZLE_CONFIG[key],
+            BASE_DATA[key],
+            BUILD_DATA[orderStr],
         );
     }
 

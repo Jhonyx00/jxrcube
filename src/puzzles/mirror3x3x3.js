@@ -9,14 +9,9 @@ class Mirror3x3x3 extends Puzzle {
     constructor() {
         const key = "mirror3x3x3";
         const orderStr = "3x3x3";
-        /** @type {PuzzleData}*/
-        const puzzleData = {
-            name: key,
-            ...PUZZLE_BASE_DATA[orderStr]
-        };
         super(
-            puzzleData,
-            PUZZLE_CONFIG[key],
+            BASE_DATA[key],
+            BUILD_DATA[orderStr],
         );
     }
 

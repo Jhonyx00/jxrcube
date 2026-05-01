@@ -108,24 +108,24 @@ class Puzzle {
 
     /**
      * Constructs a new puzzle brain.
-     * @param {PuzzleData} data - The puzzle data.
-     * @param {PuzzleConfig} config - The puzzle config.
+     * @param {PuzzleData} baseData - The puzzle data.
+     * @param {PuzzleConfig} buildData - The puzzle config.
      */
-    constructor(data, config) {
-        // base
-        this.name = data.name;
-        this.order = data.order;
-        this.offset = data.offset;
-        this.indexToAxis = data.indexToAxis;
-        this.positionMap = data.positionMap;
-        this.cubeletOptions = data.cubeletOptions;
+    constructor(baseData, buildData) {
+        // baseData
+        this.name = baseData.name;
+        this.coreData = baseData.coreData;
+        this.positionMap = baseData.positionMap;
+        this.appearanceNames = baseData.appearanceNames;
+        this.cubeletOptions = baseData.cubeletOptions;
+        this.signExpansionFactor = baseData.signExpansionFactor;
 
-        // config
-        this.coreData = config.coreData;
-        this.cubeletSize = config.cubeletSize;
-        this.appearanceNames = config.appearanceNames;
-        this.maxPositionFactor = config.maxPositionFactor;
-        this.signExpansionFactor = config.signExpansionFactor;
+        // buildData
+        this.order = buildData.order;
+        this.offset = buildData.offset;
+        this.indexToAxis = buildData.indexToAxis;
+        this.cubeletSize = buildData.cubeletSize;
+        this.maxPositionFactor = buildData.maxPositionFactor;
 
         this.displayedCubelets = "all";
         this.#moveKeys = Object.keys(this.moves);

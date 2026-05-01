@@ -83,6 +83,40 @@ const puzzlesDynamicState = {
     },
 }
 
+// const cube2x2x2 = new Cube2x2x2();
+// const cube3x3x3 = new Cube3x3x3();
+// const cube4x4x4 = new Cube4x4x4();
+// const mirror3x3x3 = new Mirror3x3x3();
+
+// const cube3x3x4 = new Cube3x3x4();
+// const cube3x3x4 = new Cube3x3x5();
+
+// const cube4x4x2 = new Cube4x4x2();
+// const cube3x3x1 = new Cube3x3x1();
+
+
+// const cube3x3x3BuildData = {cube3x3x3.}
+
+// const buildData = {
+//     order: puzzleRef.order,
+//     offset: puzzleRef.offset,
+//     indexToAxis: puzzleRef.indexToAxis,
+//     cubeletSize: puzzleRef.cubeletSize,
+//     maxPositionFactor: puzzleRef.maxPositionFactor,
+// }
+
+// const cube2x2x2CubeletsData = PuzzleBuilder.generateMultipleLayerCubeletsData(buildData);
+// const cube3x3x3CubeletsData = PuzzleBuilder.generateMultipleLayerCubeletsData(buildData);
+// const cube4x4x4CubeletsData = PuzzleBuilder.generateMultipleLayerCubeletsData(buildData);
+// const cube3x3x4CubeletsData = PuzzleBuilder.generateMultipleLayerCubeletsData(buildData);
+// const cube3x3x5CubeletsData = PuzzleBuilder.generateMultipleLayerCubeletsData(buildData);
+// const cube4x4x2CubeletsData = PuzzleBuilder.generateMultipleLayerCubeletsData(buildData);
+
+// const mirror3x3x3CubeletsData = PuzzleBuilder.generateIrregularCubeletsData(buildData);
+
+// const cube3x3x1CubeletsData = PuzzleBuilder.generateSingleLayerCubeletsData(buildData);
+
+
 /**
  * Scene ref where the puzzle is 3d rendered.
  */
