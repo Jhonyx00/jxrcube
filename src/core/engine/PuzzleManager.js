@@ -12,7 +12,13 @@ class PuzzleManager {
      * The puzzles data.
      * @type {Object.<string, PuzzleDynamicState>}
      */
-    #puzzlesData = {}
+    #dynamicState = {}
+
+    /**
+     * An object containing the build data of each puzzle.
+     * @type {Object.<string, BuildData>}
+     */
+    #buildData = {}
 
     /**
      * An array containing the name of each puzzle.
@@ -33,15 +39,17 @@ class PuzzleManager {
 
     /**
      * Constructs a single point of control that manages the actions of the current puzzle.
-     * @param {Object.<string, PuzzleDynamicState>} puzzlesData - The puzzles data object.
+     * @param {Object.<string, PuzzleDynamicState>} dynamicState - The puzzles dynamic state object.
      * @param {Scene} scene - The container where the puzzles will be rendered.
+     * @param {BuildData} buildData - The container where the puzzles will be rendered.
      */
-    constructor(scene, puzzlesData) {
-        this.#puzzlesData = puzzlesData;
+    constructor(scene, dynamicState, buildData) {
         this.#scene = scene;
-        this.#puzzleNames = Object.keys(this.#puzzlesData);
+        this.#buildData = buildData;
+        this.#dynamicState = dynamicState;
+        this.#puzzleNames = Object.keys(this.#dynamicState);
         this.#currentKey = localStorage.getItem("selected") || this.puzzleNames[1]; // Default puzzle (3x3 cube).
-        this.#currentPuzzle = this.#puzzlesData[this.#currentKey].ref;
+        this.#currentPuzzle = this.#dynamicState[this.#currentKey].ref;
     }
 
     get puzzleNames() {
@@ -60,7 +68,7 @@ class PuzzleManager {
      * @returns {string} The appearance of the current puzzle.
      */
     get currentAppearance() {
-        return this.#puzzlesData[this.#currentKey].config.appearance;
+        return this.#dynamicState[this.#currentKey].config.appearance;
     }
 
     /**
@@ -75,7 +83,7 @@ class PuzzleManager {
      */
     init() {
         this.puzzleNames.forEach(name => {
-            const puzzle = this.#puzzlesData[name];
+            const puzzle = this.#dynamicState[name];
 
             const puzzleRef = puzzle.ref;
             puzzleRef.onTurnComplete(() => this.#saveState());
@@ -85,26 +93,7 @@ class PuzzleManager {
                 appearance: "classic",
                 matrix: new Matrix3D().rotateSelf(-35, -40, 22.5).data
             };
-
-            const buildData = {
-                order: puzzleRef.order,
-                offset: puzzleRef.offset,
-                indexToAxis: puzzleRef.indexToAxis,
-                cubeletSize: puzzleRef.cubeletSize,
-                maxPositionFactor: puzzleRef.maxPositionFactor,
-            }
-
-            let cubeletsData;
-            if (name === "mirror3x3x3") {
-                cubeletsData = PuzzleBuilder.generateIrregularCubeletsData(buildData);
-            }
-            else if (name === "cube3x3x1") {
-                cubeletsData = PuzzleBuilder.generateSingleLayerCubeletsData(buildData);
-            }
-            else {
-                cubeletsData = PuzzleBuilder.generateMultipleLayerCubeletsData(buildData);
-            }
-
+            const cubeletsData = this.#buildData[name];
             const cubelets = PuzzleFactory.createBasicBoxes(cubeletsData, state); // The array that contains the Box3D instanes.
 
             puzzleRef.state = state;
@@ -116,7 +105,7 @@ class PuzzleManager {
             const sign3d = new Sign3D({
                 data: { 0: "Front", 1: "Up", 2: "Right", 3: "Back", 4: "Left", 5: "Down" },
                 parent: container.element,
-                tz: puzzleRef.signExpansionFactor
+                tz: puzzleRef.baseData.signExpansionFactor
             });
 
             puzzleRef.setSign3d(sign3d);
@@ -142,7 +131,7 @@ class PuzzleManager {
      */
     setCurrent(puzzleName) {
         this.#currentKey = puzzleName;
-        this.#currentPuzzle = this.#puzzlesData[puzzleName].ref;
+        this.#currentPuzzle = this.#dynamicState[puzzleName].ref;
         this.#renderSelected();
         this.#setCurrentOptions();
         localStorage.setItem("selected", puzzleName);
@@ -154,7 +143,7 @@ class PuzzleManager {
      * @returns {Object.<string, boolean>} The object containing the menu state.
      */
     getSubMenuState(subMenuName) {
-        return this.#puzzlesData[this.#currentKey][subMenuName];
+        return this.#dynamicState[this.#currentKey][subMenuName];
     }
 
     setGlobalMatrix() {
@@ -239,7 +228,7 @@ class PuzzleManager {
      * Sets the menu options of the current puzzle.
      */
     #setCurrentOptions() {
-        const puzzle = this.#puzzlesData[this.#currentKey];
+        const puzzle = this.#dynamicState[this.#currentKey];
         // actions.
         puzzle.actions.rotate = this.#currentPuzzle.isFreeRotating;
         puzzle.actions.scramble = this.#currentPuzzle.isScrambling;
@@ -267,9 +256,9 @@ class PuzzleManager {
    * @param {PersistentState} newValues - Object conaining the new values to update.
    */
     #updatePuzzleData(newValues) {
-        const prev = this.#puzzlesData[this.#currentKey].config;
+        const prev = this.#dynamicState[this.#currentKey].config;
         const newConfig = { ...prev, ...newValues };
-        this.#puzzlesData[this.#currentKey].config = newConfig;
+        this.#dynamicState[this.#currentKey].config = newConfig;
         localStorage.setItem(`jxrcube:${this.#currentKey}:config`, JSON.stringify(newConfig));
     }
 }

@@ -8,7 +8,7 @@
  * The object containg the dynamic state for each puzzle. 
  * @type {Object.<string, PuzzleDynamicState>}
  */
-const puzzlesDynamicState = {
+const dynamicState = {
     "cube2x2x2": {
         ref: new Cube2x2x2(),
         actions: {},
@@ -83,45 +83,29 @@ const puzzlesDynamicState = {
     },
 }
 
-// const cube2x2x2 = new Cube2x2x2();
-// const cube3x3x3 = new Cube3x3x3();
-// const cube4x4x4 = new Cube4x4x4();
-// const mirror3x3x3 = new Mirror3x3x3();
+const puzzleBuildData = {};
+Object.entries(dynamicState).forEach(([key, data]) => {
+    const buildData = data.ref.buildData;
+    puzzleBuildData[key] = buildData;
+});
 
-// const cube3x3x4 = new Cube3x3x4();
-// const cube3x3x4 = new Cube3x3x5();
-
-// const cube4x4x2 = new Cube4x4x2();
-// const cube3x3x1 = new Cube3x3x1();
-
-
-// const cube3x3x3BuildData = {cube3x3x3.}
-
-// const buildData = {
-//     order: puzzleRef.order,
-//     offset: puzzleRef.offset,
-//     indexToAxis: puzzleRef.indexToAxis,
-//     cubeletSize: puzzleRef.cubeletSize,
-//     maxPositionFactor: puzzleRef.maxPositionFactor,
-// }
-
-// const cube2x2x2CubeletsData = PuzzleBuilder.generateMultipleLayerCubeletsData(buildData);
-// const cube3x3x3CubeletsData = PuzzleBuilder.generateMultipleLayerCubeletsData(buildData);
-// const cube4x4x4CubeletsData = PuzzleBuilder.generateMultipleLayerCubeletsData(buildData);
-// const cube3x3x4CubeletsData = PuzzleBuilder.generateMultipleLayerCubeletsData(buildData);
-// const cube3x3x5CubeletsData = PuzzleBuilder.generateMultipleLayerCubeletsData(buildData);
-// const cube4x4x2CubeletsData = PuzzleBuilder.generateMultipleLayerCubeletsData(buildData);
-
-// const mirror3x3x3CubeletsData = PuzzleBuilder.generateIrregularCubeletsData(buildData);
-
-// const cube3x3x1CubeletsData = PuzzleBuilder.generateSingleLayerCubeletsData(buildData);
-
+// each new puzzle goes here
+const buildData = {
+    "cube2x2x2": PuzzleBuilder.generateMultipleLayerCubeletsData(puzzleBuildData["cube2x2x2"]),
+    "cube3x3x3": PuzzleBuilder.generateMultipleLayerCubeletsData(puzzleBuildData["cube3x3x3"]),
+    "cube4x4x4": PuzzleBuilder.generateMultipleLayerCubeletsData(puzzleBuildData["cube4x4x4"]),
+    "cube3x3x4": PuzzleBuilder.generateMultipleLayerCubeletsData(puzzleBuildData["cube3x3x4"]),
+    "cube3x3x5": PuzzleBuilder.generateMultipleLayerCubeletsData(puzzleBuildData["cube3x3x5"]),
+    "cube4x4x2": PuzzleBuilder.generateMultipleLayerCubeletsData(puzzleBuildData["cube4x4x2"]),
+    "cube3x3x1": PuzzleBuilder.generateSingleLayerCubeletsData(puzzleBuildData["cube3x3x1"]),
+    "mirror3x3x3": PuzzleBuilder.generateIrregularCubeletsData(puzzleBuildData["mirror3x3x3"]),
+}
 
 /**
  * Scene ref where the puzzle is 3d rendered.
  */
 const scene = new Scene(document.body);
-const puzzleManager = new PuzzleManager(scene, puzzlesDynamicState);
+const puzzleManager = new PuzzleManager(scene, dynamicState, buildData);
 
 /**
  * @type {ButtonGroupData}
@@ -171,7 +155,7 @@ const cubeletButtonOptions = {
 const puzzleButtonData = {
     name: "puzzles",
     rawData:
-        Object.keys(puzzlesDynamicState).map((key) => {
+        Object.keys(dynamicState).map((key) => {
             return {
                 name: key,
                 icon: `./public/icons/puzzles/${key}.svg`,
@@ -253,11 +237,11 @@ const menu = new Menu({
 /**
  * appearance and cubelets are unique for each puzzle.
  */
-Object.entries(puzzlesDynamicState).forEach(([key, data]) => {
+Object.entries(dynamicState).forEach(([key, data]) => {
     menu.buildSubButtons({
         key: key,
         subMenuKey: "appearances",
-        list: data.ref.appearanceNames,
+        list: data.ref.baseData.appearanceNames,
         // icons: appearanceIcons[key],
         callback: (key) => puzzleManager.changeAppearance(key)
     });
@@ -265,7 +249,7 @@ Object.entries(puzzlesDynamicState).forEach(([key, data]) => {
     menu.buildSubButtons({
         key: key,
         subMenuKey: "cubelets",
-        list: data.ref.cubeletOptions,
+        list: data.ref.baseData.cubeletOptions,
         icons: cubeletIcons[key],
         callback: (key) => puzzleManager.displayCubeletType(key)
     });

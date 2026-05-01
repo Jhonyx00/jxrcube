@@ -112,21 +112,8 @@ class Puzzle {
      * @param {PuzzleConfig} buildData - The puzzle config.
      */
     constructor(baseData, buildData) {
-        // baseData
-        this.name = baseData.name;
-        this.coreData = baseData.coreData;
-        this.positionMap = baseData.positionMap;
-        this.appearanceNames = baseData.appearanceNames;
-        this.cubeletOptions = baseData.cubeletOptions;
-        this.signExpansionFactor = baseData.signExpansionFactor;
-
-        // buildData
-        this.order = buildData.order;
-        this.offset = buildData.offset;
-        this.indexToAxis = buildData.indexToAxis;
-        this.cubeletSize = buildData.cubeletSize;
-        this.maxPositionFactor = buildData.maxPositionFactor;
-
+        this.baseData = baseData; // baseData
+        this.buildData = buildData; // buildData
         this.displayedCubelets = "all";
         this.#moveKeys = Object.keys(this.moves);
     }
@@ -402,7 +389,7 @@ class Puzzle {
             const currentAxis = Math.abs(this.#projectionPoint.x) > Math.abs(this.#projectionPoint.y) ? Puzzle.#AXES.x : Puzzle.#AXES.y;
             const translationIndex = Puzzle.#FACE_TO_TRANSLATION_INDICES[this.#selectedCubeletFace][currentAxis];
             const translationComponent = this.#selectedCubelet.matrix.data[translationIndex];
-            const gridPosition = this.#selectedCubelet.size ? translationComponent / this.cubeletSize : Math.sign(translationComponent);
+            const gridPosition = this.#selectedCubelet.size ? translationComponent / this.buildData.cubeletSize : Math.sign(translationComponent);
 
             this.#initialMove = this.movesMap[this.#selectedCubeletFace][currentAxis][gridPosition][direction];
             const cubeletsCallback = this.getCubeletsCallback(this.#initialMove, translationComponent);
@@ -695,7 +682,7 @@ class Puzzle {
      * Adds a number label on each face of the cubelet.
      */
     #addNumbers() {
-        const coreData = this.coreData;
+        const coreData = this.baseData.coreData;
         const coreList = coreData.list;
         const coreLabel = coreData.label;
         this.#cubelets.forEach(cubelet => {
