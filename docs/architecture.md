@@ -28,7 +28,7 @@ The simulator operates using the following repertoire of classes:
 
 - **Puzzle**: The "brain" of the system. It handles generic logic shared across all puzzles, such as layer dragging, scrambling, resetting, and keyboard command controls.
 
-- **Cube2x2x2**, Cube3x3x3, Cube4x4x4, Mirror3x3x3, Cube3x3x4, Cube3x3x5: Specific classes representing each puzzle, including their move maps, layers, and unique behaviors.
+- **Cube2x2x2**, **Cube3x3x3**, **Cube4x4x4**, **Mirror3x3x3**, **Cube3x3x4**, **Cube3x3x5**, **Cube4x4x2**, **Cube3x3x1**: Specific classes representing each puzzle, including their move maps, layers, and unique behaviors.
 
 - **PuzzleController**: Manages DOM events for puzzle interaction, such as mousemove, touchstart, etc.
 
