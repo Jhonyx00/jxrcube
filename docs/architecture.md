@@ -57,7 +57,7 @@ The PuzzleManager instance requires two components:
 - A Scene object (handles 3D rendering).
 - An Initial Data Object containing puzzle instances, such as **Cube3x3x3**.
 
-The **Cube2x2x2**, **Cube3x3x3**, **Cube4x4x4**, **Mirror3x3x3**, **Cube3x3x4**, **Cube4x4x2** and **Cube3x3x5** classes inherit from Puzzle (the "brain"). Internally, they require a Container3D instance (a group for 3D elements) where the Box3D cubelets are stored.
+The **Cube2x2x2**, **Cube3x3x3**, **Cube4x4x4**, **Mirror3x3x3**, **Cube3x3x4**, **Cube3x3x1**, **Cube4x4x2** and **Cube3x3x5** classes inherit from Puzzle (the "brain"). Internally, they require a Container3D instance (a group for 3D elements) where the Box3D cubelets are stored.
 
 #### Build
 The **PuzzleManager** class includes an initialization method that runs once at startup to set everything in motion. This process involves interaction with two additional classes:
@@ -105,6 +105,7 @@ The file structure reflects the project's modular architecture, enabling the dev
 │   ├───puzzles                   # .js files modeling specific puzzles
 │   │   ├───cube2x2x2             # 2x2x2 cube model
 │   │   ├───cube3x3x3             # 3x3x3 cube cube model
+│   │   ├───cube3x3x1             # 3x3x1 cube cube model
 │   │   ├───cube3x3x4             # 3x3x4 cuboid cube model
 │   │   ├───cube3x3x5             # 3x3x5 cuboid model
 │   │   ├───cube4x4x4             # 4x4x4 cube model
@@ -157,6 +158,7 @@ classDiagram
         class Cube3x3x4
         class Cube3x3x5
         class Cube4x4x2
+        class Cube3x3x1
     }
 
     namespace UI_Components {
@@ -172,6 +174,7 @@ classDiagram
     Puzzle <|-- Cube3x3x4 : Inheritance
     Puzzle <|-- Cube3x3x5 : Inheritance
     Puzzle <|-- Cube4x4x2 : Inheritance
+    Puzzle <|-- Cube3x3x1 : Inheritance
     
     PuzzleManager o-- Puzzle : Manages
     PuzzleController --> PuzzleManager : Controls
@@ -251,6 +254,13 @@ classDiagram
     }
 
     class Cube2x2x2{
+        +moves() Record~String, String~
+        +slices() Record~String, Slice~
+        +movesMap() Record~String, FaceCoord[]~
+        +solve() void
+    }
+
+    class Cube3x3x1{
         +moves() Record~String, String~
         +slices() Record~String, Slice~
         +movesMap() Record~String, FaceCoord[]~
