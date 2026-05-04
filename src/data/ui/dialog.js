@@ -25,6 +25,6 @@ const dialogCards = [
     },
     {
         title: "Contact",
-        description: "For feedback or inquiries feel free to reach out via <a href='mailto:jbrr.jxr@gmail.com'>email</>."
+        description: "For feedback or inquiries feel free to reach out via <a href='mailto:j.b.r.r.j.x.r@gmail.com'>email</>."
     }
 ];
