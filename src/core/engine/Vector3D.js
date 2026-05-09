@@ -1,5 +1,5 @@
 /**
- * A **`Point`** object represents a 3D point in the coordinate system, it includes values for the coordinates in three dimensions as well as an optional perspective value.
+ * A **`Vector3D`** object represents a 3D vector in three-dimensional space, it includes values for the coordinates in three dimensions as well as an optional perspective value.
  */
 class Vector3D {
     /**
@@ -20,10 +20,10 @@ class Vector3D {
 
     /**
      * Constructs a new point in the coordinate system.
-     * @param {number} x - The point's horizontal coordinate.
+     * @param {number} x - The vector's horizontal coordinate.
      * @param {number} y - Vertical coordinate.
      * @param {number} z - Depth coordinate.
-     * @param {number} w - The point's perspective value.
+     * @param {number} w - The vector's perspective value.
      */
     constructor(x, y, z, w = 1) {
         this.#x = x;
