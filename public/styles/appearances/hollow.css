@@ -41,6 +41,6 @@
     color: transparent;
 }
 
-[data-name="cube2x2"][data-appearance="hollow"] .face:not(.extroverted) {
+[data-name="cube2x2x2"][data-appearance="hollow"] .face:not(.extroverted) {
     color: transparent;
 }
