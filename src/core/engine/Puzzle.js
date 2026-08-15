@@ -622,24 +622,14 @@ class Puzzle {
                 () => { resolve(); }
             );
 
-            cores.forEach(cubelet => {
-                cubelet.backToLife(250);
-            });
-
-            centers.forEach(cubelet => {
-                cubelet.backToLife(500);
-            });
-
-            edges.forEach(cubelet => {
-                cubelet.backToLife(750);
-            });
-
-            corners.forEach(cubelet => {
-                cubelet.backToLife(1000);
-            });
+            cores.forEach(cubelet => cubelet.backToLife(250));
+            centers.forEach(cubelet => cubelet.backToLife(500));
+            edges.forEach(cubelet => cubelet.backToLife(750));
+            corners.forEach(cubelet => cubelet.backToLife(1000));
         });
     }
 
+    // Action toggle methods.
     #toggleScramble() {
         this.#isScrambling = !this.#isScrambling;
     }
