@@ -22,4 +22,8 @@ class Scene {
     get element() {
         return this.#element;
     }
+
+    replaceChildren() {
+        this.#element.replaceChildren();
+    }
 }

@@ -240,7 +240,7 @@ class PuzzleManager {
     }
 
     #renderSelected() {
-        this.#scene.element.replaceChildren();
+        this.#scene.replaceChildren();
         this.#currentPuzzle.render(this.#scene.element);
     }
 
