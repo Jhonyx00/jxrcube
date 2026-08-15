@@ -7,6 +7,7 @@ const DEFAULT_APPEARANCES = {
     "acrylic": "acrylic",
     "outline": "outline",
     "grid": "grid",
+    "ice": "ice"
 }
 
 /**
@@ -19,7 +20,6 @@ const REGULAR_PUZZLE_APPEARANCES = {
     "glass": "glass",
     "transparent": "transparent",
     "inverted": "inverted",
-    "ice": "ice",
 }
 
 /**
