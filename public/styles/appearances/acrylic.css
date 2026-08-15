@@ -49,11 +49,6 @@
     color: rgba(133, 0, 228, 0.58);
 }
 
-/* global */
-[data-name][data-name="mirror3x3x3"] .face {
-    color: white;
-}
-
 [data-name="mirror3x3x3"] .box:not(.core) .face:not(.extroverted) {
     color: transparent;
 }
