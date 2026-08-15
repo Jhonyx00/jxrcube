@@ -92,7 +92,7 @@ class Vector3D {
     static DOWN = new Vector3D(0, -1, 0);
 
     /**
-     * 
+     * Multiplies a vector by a matrix 4x4.
      * @param {Float32Array<ArrayBuffer>} matrix - A string containing the 16 components of the matrix. 
      */
     matrixTransform(matrix) {
