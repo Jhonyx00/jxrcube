@@ -22,8 +22,8 @@ class Puzzle {
     #canRotateSlice = true;
     #isFreeRotating = false;
     #areFaceLabelsActive = false;
-    #areNumericalLabelsActive = false;
-    #areDirectionalLabelsActive = false;
+    #areNumericLabelsActive = false;
+    #areDirectionLabelsActive = false;
 
     /**
      * The callback that executes after a turn is made.
@@ -271,9 +271,9 @@ class Puzzle {
 
     get areFaceLabelsActive() { return this.#areFaceLabelsActive; }
 
-    get areNumericalLabelsActive() { return this.#areNumericalLabelsActive; }
+    get areNumericLabelsActive() { return this.#areNumericLabelsActive; }
 
-    get areDirectionalLabelsActive() { return this.#areDirectionalLabelsActive; }
+    get areDirectionLabelsActive() { return this.#areDirectionLabelsActive; }
 
     /**
      * The slices data of the puzzle.
@@ -517,22 +517,22 @@ class Puzzle {
     /**
      * Sets the numerical labels state.
      */
-    addLabels() {
+    displayNumericLabels() {
         this.#container.setDataAttr("labels", "numbers");
-        if (this.#areNumericalLabelsActive === false) {
+        if (this.#areNumericLabelsActive === false) {
             this.#addNumbers();
         }
         else {
             this.removeLabels();
-            this.#toggleAreNumericalLabelsActive();
+            this.#toggleAreNumericLabelsActive();
         }
     }
 
     /**
      * Sets the directional labels state.
      */
-    direction() {
-        if (this.#areDirectionalLabelsActive === false) {
+    displayDirectionLabels() {
+        if (this.#areDirectionLabelsActive === false) {
             this.#sign3D.addClass("direction");
         }
         else {
@@ -649,15 +649,15 @@ class Puzzle {
     }
 
     #toggleAreDirectionalLabelsActive() {
-        this.#areDirectionalLabelsActive = !this.#areDirectionalLabelsActive;
+        this.#areDirectionLabelsActive = !this.#areDirectionLabelsActive;
     }
 
     #toggleAreFaceLabelsActive() {
         this.#areFaceLabelsActive = !this.#areFaceLabelsActive;
     }
 
-    #toggleAreNumericalLabelsActive() {
-        this.#areNumericalLabelsActive = !this.#areNumericalLabelsActive;
+    #toggleAreNumericLabelsActive() {
+        this.#areNumericLabelsActive = !this.#areNumericLabelsActive;
     }
 
     /**
@@ -689,7 +689,7 @@ class Puzzle {
             if (cubelet.id === coreList[cubelet.id]) { cubelet.setTextContent(coreLabel); }
             else { cubelet.setTextContent(cubelet.id); }
         });
-        this.#toggleAreNumericalLabelsActive()
+        this.#toggleAreNumericLabelsActive()
     }
 
     /**

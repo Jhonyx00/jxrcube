@@ -175,8 +175,8 @@ class PuzzleManager {
         this.#currentPuzzle.selectCubelet(cubelet);
     }
 
-    addLabels() {
-        this.#currentPuzzle.addLabels(this.#currentPuzzle);
+    displayNumericLabels() {
+        this.#currentPuzzle.displayNumericLabels(this.#currentPuzzle);
     }
 
     displayFaceLabels() {
@@ -199,8 +199,8 @@ class PuzzleManager {
         localStorage.removeItem(`jxrcube:${this.#currentKey}:state`);
     }
 
-    direction() {
-        this.#currentPuzzle.direction();
+    displayDirectionLabels() {
+        this.#currentPuzzle.displayDirectionLabels();
     }
 
     solve() {
@@ -233,8 +233,8 @@ class PuzzleManager {
         puzzle.actions.rotate = this.#currentPuzzle.isFreeRotating;
         puzzle.actions.scramble = this.#currentPuzzle.isScrambling;
         puzzle.actions.faces = this.#currentPuzzle.areFaceLabelsActive;
-        puzzle.actions.numbers = this.#currentPuzzle.areNumericalLabelsActive;
-        puzzle.actions.direction = this.#currentPuzzle.areDirectionalLabelsActive;
+        puzzle.actions.numbers = this.#currentPuzzle.areNumericLabelsActive;
+        puzzle.actions.direction = this.#currentPuzzle.areDirectionLabelsActive;
         // cubelets
         puzzle.cubeletOption = this.#currentPuzzle.displayedCubelets;
     }

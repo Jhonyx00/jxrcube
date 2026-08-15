@@ -190,7 +190,7 @@ const actionButtonData = {
     rawData: [
         {
             name: "numbers",
-            callback: () => puzzleManager.addLabels(),
+            callback: () => puzzleManager.displayNumericLabels(),
             icon: `./public/icons/actions/numbers.svg`
         },
         {
@@ -200,7 +200,7 @@ const actionButtonData = {
         },
         {
             name: "direction",
-            callback: () => puzzleManager.direction(),
+            callback: () => puzzleManager.displayDirectionLabels(),
             icon: `./public/icons/actions/direction.svg`
         },
         {
