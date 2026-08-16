@@ -65,10 +65,6 @@
     mix-blend-mode: difference;
 }
 
-.scale-0 .btn {
-    transform: scale(0);
-}
-
 .rounded-btns button,
 .rounded-btn {
     border-radius: 0.5rem;
