@@ -65,6 +65,12 @@
     mix-blend-mode: difference;
 }
 
+.active-50 {
+    /* filter: brightness(50%); */
+    backdrop-filter: blur(1em);
+    mix-blend-mode: difference;
+}
+
 .rounded-btns button,
 .rounded-btn {
     border-radius: 0.5rem;

@@ -466,6 +466,7 @@ class Puzzle {
      */
     scramble() {
         const sliceTurningDuration = Puzzle.#TRANSITION_DURATIONS.SCRAMBLE;
+
         const actionFrame = () => {
             if (!this.#isScrambling) return;
             if (this.#isTurning) return;
@@ -545,6 +546,8 @@ class Puzzle {
      * Resets the puzzle state to its default state (solved).
      */
     reset() {
+        // Reset only if the state has CubeletState objects.
+        if (Object.keys(this.#state).length === 0) return;
         this.#state = {};
         this.#cubeletsData.forEach(cubelet => {
             const id = cubelet.id;
